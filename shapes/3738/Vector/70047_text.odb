@@ -1,0 +1,1678 @@
+/3.0
+(ODB.1
+	FirstRootClassName:	"List"
+	Roots:	2
+	Version:	30
+)
+
+(List.2
+	Child:	3
+	Child:	15
+	Child:	26
+	Child:	37
+	Child:	48
+	Child:	59
+	Child:	70
+	Child:	81
+	Child:	92
+	Child:	103
+	Child:	114
+	Child:	125
+	Child:	136
+	Child:	147
+	Child:	158
+	Child:	169
+	Child:	180
+	Child:	191
+	Child:	202
+	Child:	213
+	Child:	224
+	Child:	235
+	Child:	246
+	Child:	257
+	Child:	268
+	Child:	279
+)
+
+(GText.3
+	Bounds:	4
+	Sym:	5
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.4
+	Left:	-14286710.61092792600000
+	Top:	6960278.52606461760000
+	Right:	-14286220.48901267000000
+	Bottom:	6960147.47742417450000
+)
+
+(TxSym.5
+	Color:	6
+	Scale:	7
+	Font:	8
+	BgColor:	13
+	OlColor:	14
+	Size:	9435.50211189611760
+)
+
+(TClr.6
+)
+
+(Numb.7
+	N:	7.67809520870517
+)
+
+(NFont.8
+	Family:	9
+	Name:	10
+	Style:	11
+	CommonFamily:	12
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.9
+	S:	"Arial"
+)
+
+(AVStr.10
+	S:	"Arial"
+)
+
+(AVStr.11
+	S:	"Normal"
+)
+
+(AVStr.12
+	S:	"Helvetica"
+)
+
+(TClr.13
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.14
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.15
+	Bounds:	16
+	Sym:	17
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.16
+	Left:	-14286572.81045607300000
+	Top:	6960254.78186842890000
+	Right:	-14286082.68999806800000
+	Bottom:	6960123.73361762520000
+)
+
+(TxSym.17
+	Color:	18
+	Scale:	7
+	Font:	19
+	BgColor:	24
+	OlColor:	25
+	Size:	9435.47405786736640
+)
+
+(TClr.18
+)
+
+(NFont.19
+	Family:	20
+	Name:	21
+	Style:	22
+	CommonFamily:	23
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.20
+	S:	"Arial"
+)
+
+(AVStr.21
+	S:	"Arial"
+)
+
+(AVStr.22
+	S:	"Normal"
+)
+
+(AVStr.23
+	S:	"Helvetica"
+)
+
+(TClr.24
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.25
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.26
+	Bounds:	27
+	Sym:	28
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.27
+	Left:	-14280971.34753695500000
+	Top:	6962962.16917567140000
+	Right:	-14280481.06087475800000
+	Bottom:	6962831.07648524460000
+)
+
+(TxSym.28
+	Color:	29
+	Scale:	7
+	Font:	30
+	BgColor:	35
+	OlColor:	36
+	Size:	9438.67371073289540
+)
+
+(TClr.29
+)
+
+(NFont.30
+	Family:	31
+	Name:	32
+	Style:	33
+	CommonFamily:	34
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.31
+	S:	"Arial"
+)
+
+(AVStr.32
+	S:	"Arial"
+)
+
+(AVStr.33
+	S:	"Normal"
+)
+
+(AVStr.34
+	S:	"Helvetica"
+)
+
+(TClr.35
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.36
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.37
+	Bounds:	38
+	Sym:	39
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.38
+	Left:	-14292022.15767521600000
+	Top:	6973580.90046295240000
+	Right:	-14291531.21828329700000
+	Bottom:	6973449.63324586210000
+)
+
+(TxSym.39
+	Color:	40
+	Scale:	7
+	Font:	41
+	BgColor:	46
+	OlColor:	47
+	Size:	9451.23963050468410
+)
+
+(TClr.40
+)
+
+(NFont.41
+	Family:	42
+	Name:	43
+	Style:	44
+	CommonFamily:	45
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.42
+	S:	"Arial"
+)
+
+(AVStr.43
+	S:	"Arial"
+)
+
+(AVStr.44
+	S:	"Normal"
+)
+
+(AVStr.45
+	S:	"Helvetica"
+)
+
+(TClr.46
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.47
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.48
+	Bounds:	49
+	Sym:	50
+	Text:	"20FA"
+	Spacing:	1.00000000000000
+)
+
+(RectD.49
+	Left:	-14291633.81402457300000
+	Top:	6973265.76117336750000
+	Right:	-14291356.85113642700000
+	Bottom:	6973134.49914107100000
+)
+
+(TxSym.50
+	Color:	51
+	Scale:	7
+	Font:	52
+	BgColor:	57
+	OlColor:	58
+	Size:	9450.86632534785890
+)
+
+(TClr.51
+)
+
+(NFont.52
+	Family:	53
+	Name:	54
+	Style:	55
+	CommonFamily:	56
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.53
+	S:	"Arial"
+)
+
+(AVStr.54
+	S:	"Arial"
+)
+
+(AVStr.55
+	S:	"Normal"
+)
+
+(AVStr.56
+	S:	"Helvetica"
+)
+
+(TClr.57
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.58
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.59
+	Bounds:	60
+	Sym:	61
+	Text:	"20FA"
+	Spacing:	1.00000000000000
+)
+
+(RectD.60
+	Left:	-14290463.41236021200000
+	Top:	6952052.13161741570000
+	Right:	-14290187.18433671600000
+	Bottom:	6951921.21786220460000
+)
+
+(TxSym.61
+	Color:	62
+	Scale:	7
+	Font:	63
+	BgColor:	68
+	OlColor:	69
+	Size:	9425.79037519468870
+)
+
+(TClr.62
+)
+
+(NFont.63
+	Family:	64
+	Name:	65
+	Style:	66
+	CommonFamily:	67
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.64
+	S:	"Arial"
+)
+
+(AVStr.65
+	S:	"Arial"
+)
+
+(AVStr.66
+	S:	"Normal"
+)
+
+(AVStr.67
+	S:	"Helvetica"
+)
+
+(TClr.68
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.69
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.70
+	Bounds:	71
+	Sym:	72
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.71
+	Left:	-14290794.48953864900000
+	Top:	6949372.15247314520000
+	Right:	-14290305.03626335400000
+	Bottom:	6949241.28261344040000
+)
+
+(TxSym.72
+	Color:	73
+	Scale:	7
+	Font:	74
+	BgColor:	79
+	OlColor:	80
+	Size:	9422.62989874108640
+)
+
+(TClr.73
+)
+
+(NFont.74
+	Family:	75
+	Name:	76
+	Style:	77
+	CommonFamily:	78
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.75
+	S:	"Arial"
+)
+
+(AVStr.76
+	S:	"Arial"
+)
+
+(AVStr.77
+	S:	"Normal"
+)
+
+(AVStr.78
+	S:	"Helvetica"
+)
+
+(TClr.79
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.80
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.81
+	Bounds:	82
+	Sym:	83
+	Text:	"20FA"
+	Spacing:	1.00000000000000
+)
+
+(RectD.82
+	Left:	-14277397.50535924200000
+	Top:	6935364.31656482260000
+	Right:	-14277121.85326841300000
+	Bottom:	6935233.67576348220000
+)
+
+(TxSym.83
+	Color:	84
+	Scale:	7
+	Font:	85
+	BgColor:	90
+	OlColor:	91
+	Size:	9406.13769650383800
+)
+
+(TClr.84
+)
+
+(NFont.85
+	Family:	86
+	Name:	87
+	Style:	88
+	CommonFamily:	89
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.86
+	S:	"Arial"
+)
+
+(AVStr.87
+	S:	"Arial"
+)
+
+(AVStr.88
+	S:	"Normal"
+)
+
+(AVStr.89
+	S:	"Helvetica"
+)
+
+(TClr.90
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.91
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.92
+	Bounds:	93
+	Sym:	94
+	Text:	"20FA"
+	Spacing:	1.00000000000000
+)
+
+(RectD.93
+	Left:	-14281270.21156031600000
+	Top:	6963368.95024977810000
+	Right:	-14280993.59189075400000
+	Bottom:	6963237.85088031740000
+)
+
+(TxSym.94
+	Color:	95
+	Scale:	7
+	Font:	96
+	BgColor:	101
+	OlColor:	102
+	Size:	9439.15460117085790
+)
+
+(TClr.95
+)
+
+(NFont.96
+	Family:	97
+	Name:	98
+	Style:	99
+	CommonFamily:	100
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.97
+	S:	"Arial"
+)
+
+(AVStr.98
+	S:	"Arial"
+)
+
+(AVStr.99
+	S:	"Normal"
+)
+
+(AVStr.100
+	S:	"Helvetica"
+)
+
+(TClr.101
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.102
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.103
+	Bounds:	104
+	Sym:	105
+	Text:	"20FA"
+	Spacing:	1.00000000000000
+)
+
+(RectD.104
+	Left:	-14281476.01548143700000
+	Top:	6963113.76477030200000
+	Right:	-14281273.52002747900000
+	Bottom:	6963017.79536084370000
+)
+
+(TxSym.105
+	Color:	106
+	Scale:	7
+	Font:	107
+	BgColor:	112
+	OlColor:	113
+	Size:	6909.79748099986950
+)
+
+(TClr.106
+)
+
+(NFont.107
+	Family:	108
+	Name:	109
+	Style:	110
+	CommonFamily:	111
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.108
+	S:	"Arial"
+)
+
+(AVStr.109
+	S:	"Arial"
+)
+
+(AVStr.110
+	S:	"Normal"
+)
+
+(AVStr.111
+	S:	"Helvetica"
+)
+
+(TClr.112
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.113
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.114
+	Bounds:	115
+	Sym:	116
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.115
+	Left:	-14286324.05529085900000
+	Top:	6932391.17811842360000
+	Right:	-14285835.64021827700000
+	Bottom:	6932260.58585302720000
+)
+
+(TxSym.116
+	Color:	117
+	Scale:	7
+	Font:	118
+	BgColor:	123
+	OlColor:	124
+	Size:	9402.64310853853020
+)
+
+(TClr.117
+)
+
+(NFont.118
+	Family:	119
+	Name:	120
+	Style:	121
+	CommonFamily:	122
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.119
+	S:	"Arial"
+)
+
+(AVStr.120
+	S:	"Arial"
+)
+
+(AVStr.121
+	S:	"Normal"
+)
+
+(AVStr.122
+	S:	"Helvetica"
+)
+
+(TClr.123
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.124
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.125
+	Bounds:	126
+	Sym:	127
+	Text:	"20FA"
+	Spacing:	1.00000000000000
+)
+
+(RectD.126
+	Left:	-14287616.15084953400000
+	Top:	6951559.94497571230000
+	Right:	-14287339.93983956800000
+	Bottom:	6951429.03928378500000
+)
+
+(TxSym.127
+	Color:	128
+	Scale:	7
+	Font:	129
+	BgColor:	134
+	OlColor:	135
+	Size:	9425.20981876476620
+)
+
+(TClr.128
+)
+
+(NFont.129
+	Family:	130
+	Name:	131
+	Style:	132
+	CommonFamily:	133
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.130
+	S:	"Arial"
+)
+
+(AVStr.131
+	S:	"Arial"
+)
+
+(AVStr.132
+	S:	"Normal"
+)
+
+(AVStr.133
+	S:	"Helvetica"
+)
+
+(TClr.134
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.135
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.136
+	Bounds:	137
+	Sym:	138
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.137
+	Left:	-14290572.57792804000000
+	Top:	6950806.89628319910000
+	Right:	-14290083.03677449900000
+	Bottom:	6950676.00292663740000
+)
+
+(TxSym.138
+	Color:	139
+	Scale:	7
+	Font:	140
+	BgColor:	145
+	OlColor:	146
+	Size:	9424.32167243882030
+)
+
+(TClr.139
+)
+
+(NFont.140
+	Family:	141
+	Name:	142
+	Style:	143
+	CommonFamily:	144
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.141
+	S:	"Arial"
+)
+
+(AVStr.142
+	S:	"Arial"
+)
+
+(AVStr.143
+	S:	"Normal"
+)
+
+(AVStr.144
+	S:	"Helvetica"
+)
+
+(TClr.145
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.146
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.147
+	Bounds:	148
+	Sym:	149
+	Text:	"20FA"
+	Spacing:	1.00000000000000
+)
+
+(RectD.148
+	Left:	-14294346.85553834200000
+	Top:	6935686.84264987520000
+	Right:	-14294071.19233437600000
+	Bottom:	6935556.19658164490000
+)
+
+(TxSym.149
+	Color:	150
+	Scale:	7
+	Font:	151
+	BgColor:	156
+	OlColor:	157
+	Size:	9406.51691257878160
+)
+
+(TClr.150
+)
+
+(NFont.151
+	Family:	152
+	Name:	153
+	Style:	154
+	CommonFamily:	155
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.152
+	S:	"Arial"
+)
+
+(AVStr.153
+	S:	"Arial"
+)
+
+(AVStr.154
+	S:	"Normal"
+)
+
+(AVStr.155
+	S:	"Helvetica"
+)
+
+(TClr.156
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.157
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.158
+	Bounds:	159
+	Sym:	160
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.159
+	Left:	-14286256.05072964500000
+	Top:	6932290.61490182950000
+	Right:	-14285767.64179509900000
+	Bottom:	6932160.02427761910000
+)
+
+(TxSym.160
+	Color:	161
+	Scale:	7
+	Font:	162
+	BgColor:	167
+	OlColor:	168
+	Size:	9402.52494314982690
+)
+
+(TClr.161
+)
+
+(NFont.162
+	Family:	163
+	Name:	164
+	Style:	165
+	CommonFamily:	166
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.163
+	S:	"Arial"
+)
+
+(AVStr.164
+	S:	"Arial"
+)
+
+(AVStr.165
+	S:	"Normal"
+)
+
+(AVStr.166
+	S:	"Helvetica"
+)
+
+(TClr.167
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.168
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.169
+	Bounds:	170
+	Sym:	171
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.170
+	Left:	-14286905.67787198500000
+	Top:	6960435.83891085630000
+	Right:	-14286415.54630180800000
+	Bottom:	6960304.78768888400000
+)
+
+(TxSym.171
+	Color:	172
+	Scale:	7
+	Font:	173
+	BgColor:	178
+	OlColor:	179
+	Size:	9435.68798200710440
+)
+
+(TClr.172
+)
+
+(NFont.173
+	Family:	174
+	Name:	175
+	Style:	176
+	CommonFamily:	177
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.174
+	S:	"Arial"
+)
+
+(AVStr.175
+	S:	"Arial"
+)
+
+(AVStr.176
+	S:	"Normal"
+)
+
+(AVStr.177
+	S:	"Helvetica"
+)
+
+(TClr.178
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.179
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.180
+	Bounds:	181
+	Sym:	182
+	Text:	"30M"
+	Spacing:	1.00000000000000
+)
+
+(RectD.181
+	Left:	-14288079.65778739900000
+	Top:	6951512.67486596950000
+	Right:	-14287915.78827186900000
+	Bottom:	6951416.84473992790000
+)
+
+(TxSym.182
+	Color:	183
+	Scale:	7
+	Font:	184
+	BgColor:	189
+	OlColor:	190
+	Size:	6899.76907499079240
+)
+
+(TClr.183
+)
+
+(NFont.184
+	Family:	185
+	Name:	186
+	Style:	187
+	CommonFamily:	188
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.185
+	S:	"Arial"
+)
+
+(AVStr.186
+	S:	"Arial"
+)
+
+(AVStr.187
+	S:	"Normal"
+)
+
+(AVStr.188
+	S:	"Helvetica"
+)
+
+(TClr.189
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.190
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.191
+	Bounds:	192
+	Sym:	193
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.192
+	Left:	-14288451.89597245300000
+	Top:	6938359.27847002730000
+	Right:	-14287963.11641098400000
+	Bottom:	6938228.58874770910000
+)
+
+(TxSym.193
+	Color:	194
+	Scale:	7
+	Font:	195
+	BgColor:	200
+	OlColor:	201
+	Size:	9409.66000690980950
+)
+
+(TClr.194
+)
+
+(NFont.195
+	Family:	196
+	Name:	197
+	Style:	198
+	CommonFamily:	199
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.196
+	S:	"Arial"
+)
+
+(AVStr.197
+	S:	"Arial"
+)
+
+(AVStr.198
+	S:	"Normal"
+)
+
+(AVStr.199
+	S:	"Helvetica"
+)
+
+(TClr.200
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.201
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.202
+	Bounds:	203
+	Sym:	204
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.203
+	Left:	-14275439.67830458100000
+	Top:	6958815.37181677390000
+	Right:	-14274949.64617469000000
+	Bottom:	6958684.34718311300000
+)
+
+(TxSym.204
+	Color:	205
+	Scale:	7
+	Font:	206
+	BgColor:	211
+	OlColor:	212
+	Size:	9433.77362358494430
+)
+
+(TClr.205
+)
+
+(NFont.206
+	Family:	207
+	Name:	208
+	Style:	209
+	CommonFamily:	210
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.207
+	S:	"Arial"
+)
+
+(AVStr.208
+	S:	"Arial"
+)
+
+(AVStr.209
+	S:	"Normal"
+)
+
+(AVStr.210
+	S:	"Helvetica"
+)
+
+(TClr.211
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.212
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.213
+	Bounds:	214
+	Sym:	215
+	Text:	"20FA"
+	Spacing:	1.00000000000000
+)
+
+(RectD.214
+	Left:	-14291141.67218268300000
+	Top:	6948103.62466989180000
+	Right:	-14290865.58060172600000
+	Bottom:	6947972.77557939100000
+)
+
+(TxSym.215
+	Color:	216
+	Scale:	7
+	Font:	217
+	BgColor:	222
+	OlColor:	223
+	Size:	9421.13451605214870
+)
+
+(TClr.216
+)
+
+(NFont.217
+	Family:	218
+	Name:	219
+	Style:	220
+	CommonFamily:	221
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.218
+	S:	"Arial"
+)
+
+(AVStr.219
+	S:	"Arial"
+)
+
+(AVStr.220
+	S:	"Normal"
+)
+
+(AVStr.221
+	S:	"Helvetica"
+)
+
+(TClr.222
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.223
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.224
+	Bounds:	225
+	Sym:	226
+	Text:	"20FA"
+	Spacing:	1.00000000000000
+)
+
+(RectD.225
+	Left:	-14292711.15669864400000
+	Top:	6952034.34225394480000
+	Right:	-14292434.92929009700000
+	Bottom:	6951903.42879017810000
+)
+
+(TxSym.226
+	Color:	227
+	Scale:	7
+	Font:	228
+	BgColor:	233
+	OlColor:	234
+	Size:	9425.76939120067980
+)
+
+(TClr.227
+)
+
+(NFont.228
+	Family:	229
+	Name:	230
+	Style:	231
+	CommonFamily:	232
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.229
+	S:	"Arial"
+)
+
+(AVStr.230
+	S:	"Arial"
+)
+
+(AVStr.231
+	S:	"Normal"
+)
+
+(AVStr.232
+	S:	"Helvetica"
+)
+
+(TClr.233
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.234
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.235
+	Bounds:	236
+	Sym:	237
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.236
+	Left:	-14271404.11831452700000
+	Top:	6931166.74521993570000
+	Right:	-14270915.77796858200000
+	Bottom:	6931036.17293492330000
+)
+
+(TxSym.237
+	Color:	238
+	Scale:	7
+	Font:	239
+	BgColor:	244
+	OlColor:	245
+	Size:	9401.20452088787350
+)
+
+(TClr.238
+)
+
+(NFont.239
+	Family:	240
+	Name:	241
+	Style:	242
+	CommonFamily:	243
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.240
+	S:	"Arial"
+)
+
+(AVStr.241
+	S:	"Arial"
+)
+
+(AVStr.242
+	S:	"Normal"
+)
+
+(AVStr.243
+	S:	"Helvetica"
+)
+
+(TClr.244
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.245
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.246
+	Bounds:	247
+	Sym:	248
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.247
+	Left:	-14288655.91076804900000
+	Top:	6952099.57318418010000
+	Right:	-14288166.29041661700000
+	Bottom:	6951968.65865171140000
+)
+
+(TxSym.248
+	Color:	249
+	Scale:	7
+	Font:	250
+	BgColor:	255
+	OlColor:	256
+	Size:	9425.84633774234860
+)
+
+(TClr.249
+)
+
+(NFont.250
+	Family:	251
+	Name:	252
+	Style:	253
+	CommonFamily:	254
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.251
+	S:	"Arial"
+)
+
+(AVStr.252
+	S:	"Arial"
+)
+
+(AVStr.253
+	S:	"Normal"
+)
+
+(AVStr.254
+	S:	"Helvetica"
+)
+
+(TClr.255
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.256
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.257
+	Bounds:	258
+	Sym:	259
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.258
+	Left:	-14296338.68598556100000
+	Top:	6951405.77086492720000
+	Right:	-14295849.10814352700000
+	Bottom:	6951274.86769860800000
+)
+
+(TxSym.259
+	Color:	260
+	Scale:	7
+	Font:	261
+	BgColor:	266
+	OlColor:	267
+	Size:	9425.02797498478500
+)
+
+(TClr.260
+)
+
+(NFont.261
+	Family:	262
+	Name:	263
+	Style:	264
+	CommonFamily:	265
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.262
+	S:	"Arial"
+)
+
+(AVStr.263
+	S:	"Arial"
+)
+
+(AVStr.264
+	S:	"Normal"
+)
+
+(AVStr.265
+	S:	"Helvetica"
+)
+
+(TClr.266
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.267
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.268
+	Bounds:	269
+	Sym:	270
+	Text:	"LNDRGN"
+	Spacing:	1.00000000000000
+)
+
+(RectD.269
+	Left:	-14290882.18004040800000
+	Top:	6949170.59610039650000
+	Right:	-14290392.73910848400000
+	Bottom:	6949039.72954105870000
+)
+
+(TxSym.270
+	Color:	271
+	Scale:	7
+	Font:	272
+	BgColor:	277
+	OlColor:	278
+	Size:	9422.39227232261690
+)
+
+(TClr.271
+)
+
+(NFont.272
+	Family:	273
+	Name:	274
+	Style:	275
+	CommonFamily:	276
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.273
+	S:	"Arial"
+)
+
+(AVStr.274
+	S:	"Arial"
+)
+
+(AVStr.275
+	S:	"Normal"
+)
+
+(AVStr.276
+	S:	"Helvetica"
+)
+
+(TClr.277
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.278
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.279
+	Bounds:	280
+	Sym:	281
+	Text:	"20FA"
+	Spacing:	1.00000000000000
+)
+
+(RectD.280
+	Left:	-14290912.60295801200000
+	Top:	6944506.60708577840000
+	Right:	-14290636.63558141000000
+	Bottom:	6944375.81685990000000
+)
+
+(TxSym.281
+	Color:	282
+	Scale:	7
+	Font:	283
+	BgColor:	288
+	OlColor:	289
+	Size:	9416.89626324101300
+)
+
+(TClr.282
+)
+
+(NFont.283
+	Family:	284
+	Name:	285
+	Style:	286
+	CommonFamily:	287
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.284
+	S:	"Arial"
+)
+
+(AVStr.285
+	S:	"Arial"
+)
+
+(AVStr.286
+	S:	"Normal"
+)
+
+(AVStr.287
+	S:	"Helvetica"
+)
+
+(TClr.288
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.289
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+

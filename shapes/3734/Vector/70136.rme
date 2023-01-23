@@ -1,0 +1,89 @@
+
+
+                    Document Description for 70136.ntx
+
+ Date of creation of this listing     : 01-Nov-1995
+ Date of last change to the data file : 26-APR-1994
+                     ENC Edition Date :  17-Nov-95
+
+ Title
+ ALEXANDER INLET                                                                
+
+ Geographic Limits
+ SW  52-37-30.000N, 128-41-00.000W
+ SE  52-37-30.000N, 128-35-13.000W
+ NE  52-40-30.000N, 128-35-13.000W
+ NW  52-40-30.000N, 128-41-00.000W
+
+ Projection
+ Mercator
+
+ Scale
+ 1:36028
+
+ Scaling Latitude
+  52-35-00.000N
+ Horizontal Datum
+ NAD 83
+
+ Vertical Datum
+ CD  
+
+ Estimated horizontal accuracy of charted features
+ ±40 Metres
+
+ Originally digitized from Paper Chart
+ 3734_CN_A
+
+ Category and Publication Date of Paper Chart
+ Reprint May 24, 1991
+
+ Last Notice to Mariners
+ May 24, 1991
+
+ Depth Units
+ Fathoms and Feet
+
+ Magnetic Variation
+ Year   Declination   Annual Change
+ 1995      22°56'E       7.8'W
+
+ Features found in this file
+
+ Feature Code   Description                          Data Type     Layer Z value
+ ------------  ------------                          --------      ----- -------
+
+ CLLWRLLTSM     Rocky Ledges, Small Left             Incr. Line    200       n/a
+                Zone rocheuse: petit symbole gauche 
+                C.S.#/S.C.# 411,1                   
+                Chart 1 / Carte no 1, Section J,21  
+                Previously / Antérieurement CLLWRLRT
+                SM                           
+
+ CLSL           Coastline/Shoreline                  Incr. Line    200       n/a
+                Côte bien déterminée                
+                C.S.#/S.C.# 310,1                   
+                Chart 1 / Carte no 1, Section C,1   
+
+ CODTMR         Contour: depth in metres             Incr. Line    200      20.0
+                Isobathes, Contour bathymétrique: pr
+                ofondeurs en mètres          
+                C.S.#/S.C.# 411,1                   
+                Chart 1 / Carte no 1, Section I,30  
+
+ DLSF           Pinnacle/Snowflake Symbol            Pt Symbols    100       n/a
+                Roche qui couvre et découvre, asséch
+                ante                         
+                C.S.#/S.C.# 421,2                   
+                Chart 1 / Carte no 1, Section K,11  
+
+ GBNEATLINEIN   Inner Neatline                       Incr. Line    200       n/a
+                Orle intérieure                     
+                Previously / Antérieurement NEAT    
+
+ POLABEL        Polygon Display Labels               Char. Text    200       n/a
+                Désignation de polygone             
+   "                         "                       Char. Text    200       n/a
+
+ TEXT           Text/Names (black)                   Char. Text    100       n/a
+                Texte/Noms, (noir)                  

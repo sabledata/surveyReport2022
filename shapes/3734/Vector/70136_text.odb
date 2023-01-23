@@ -1,0 +1,270 @@
+/3.0
+(ODB.1
+	FirstRootClassName:	"List"
+	Roots:	2
+	Version:	30
+)
+
+(List.2
+	Child:	3
+	Child:	15
+	Child:	26
+	Child:	37
+)
+
+(GText.3
+	Bounds:	4
+	Sym:	5
+	Text:	"Tunis Pt"
+	Spacing:	1.00000000000000
+)
+
+(RectD.4
+	Left:	-14299041.16621017600000
+	Top:	6914920.82683306750000
+	Right:	-14298529.98078593200000
+	Bottom:	6914764.02148820740000
+)
+
+(TxSym.5
+	Color:	6
+	Scale:	7
+	Font:	8
+	BgColor:	13
+	OlColor:	14
+	Size:	11289.98482992843500
+)
+
+(TClr.6
+)
+
+(Numb.7
+	N:	30.74946675405924
+)
+
+(NFont.8
+	Family:	9
+	Name:	10
+	Style:	11
+	CommonFamily:	12
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.9
+	S:	"Arial"
+)
+
+(AVStr.10
+	S:	"Arial"
+)
+
+(AVStr.11
+	S:	"Normal"
+)
+
+(AVStr.12
+	S:	"Helvetica"
+)
+
+(TClr.13
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.14
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.15
+	Bounds:	16
+	Sym:	17
+	Text:	"ALEXANDER INLET"
+	Spacing:	1.00000000000000
+)
+
+(RectD.16
+	Left:	-14306127.24082160900000
+	Top:	6915068.65931427570000
+	Right:	-14301319.43422616300000
+	Bottom:	6914477.29318937470000
+)
+
+(TxSym.17
+	Color:	18
+	Scale:	7
+	Font:	19
+	BgColor:	24
+	OlColor:	25
+	Size:	42578.36099288416900
+)
+
+(TClr.18
+)
+
+(NFont.19
+	Family:	20
+	Name:	21
+	Style:	22
+	CommonFamily:	23
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.20
+	S:	"Arial"
+)
+
+(AVStr.21
+	S:	"Arial"
+)
+
+(AVStr.22
+	S:	"Normal"
+)
+
+(AVStr.23
+	S:	"Helvetica"
+)
+
+(TClr.24
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.25
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.26
+	Bounds:	27
+	Sym:	28
+	Text:	"Bingham"
+	Spacing:	1.00000000000000
+)
+
+(RectD.27
+	Left:	-14302765.36609689700000
+	Top:	6909063.57487904090000
+	Right:	-14302218.51527994700000
+	Bottom:	6908906.88410054520000
+)
+
+(TxSym.28
+	Color:	29
+	Scale:	7
+	Font:	30
+	BgColor:	35
+	OlColor:	36
+	Size:	11281.73605169699100
+)
+
+(TClr.29
+)
+
+(NFont.30
+	Family:	31
+	Name:	32
+	Style:	33
+	CommonFamily:	34
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.31
+	S:	"Arial"
+)
+
+(AVStr.32
+	S:	"Arial"
+)
+
+(AVStr.33
+	S:	"Normal"
+)
+
+(AVStr.34
+	S:	"Helvetica"
+)
+
+(TClr.35
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.36
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.37
+	Bounds:	38
+	Sym:	39
+	Text:	"Narrows"
+	Spacing:	1.00000000000000
+)
+
+(RectD.38
+	Left:	-14302788.80041665200000
+	Top:	6908837.80992906070000
+	Right:	-14302271.73541135300000
+	Bottom:	6908681.12356381860000
+)
+
+(TxSym.39
+	Color:	40
+	Scale:	7
+	Font:	41
+	BgColor:	46
+	OlColor:	47
+	Size:	11281.41829743579400
+)
+
+(TClr.40
+)
+
+(NFont.41
+	Family:	42
+	Name:	43
+	Style:	44
+	CommonFamily:	45
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.42
+	S:	"Arial"
+)
+
+(AVStr.43
+	S:	"Arial"
+)
+
+(AVStr.44
+	S:	"Normal"
+)
+
+(AVStr.45
+	S:	"Helvetica"
+)
+
+(TClr.46
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.47
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+

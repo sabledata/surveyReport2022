@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE metadata SYSTEM "http://www.esri.com/metadata/esriprof80.dtd">-->
+<metadata xml:lang="en"><Esri><MetaID>{91AA227E-DFF1-4457-9272-647AAB5BFC5C}</MetaID><CreaDate>20220615</CreaDate><CreaTime>10214400</CreaTime><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="C:\Program Files (x86)\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\RepairGeometry" Date="20220615" Time="102144">RepairGeometry Sablefish_2022_Primary_Blocks DELETE_NULL Sablefish_2022_Primary_Blocks</Process></lineage></DataProperties></Esri></metadata>

@@ -1,0 +1,403 @@
+
+
+                    Document Description for 70064.xntx
+
+ Date of creation of this listing     : 02-APR-1998
+ Date of last change to the data file : 11-MAR-1998
+             Current ENC Edition Date : 21-NOV-1997
+            Previous ENC Edition Date : 21-NOV-1997
+
+ Title
+ HECATE STRAIT                                                                  
+
+ Geographic Limits
+ SW  52-12-19.170N, 132-00-06.030W
+ SE  52-12-19.170N, 128-16-06.030W
+ NE  53-52-20.170N, 128-16-06.030W
+ NW  53-52-20.170N, 132-00-06.030W
+
+ Projection
+ Mercator
+
+ Scale
+ 1:250000
+
+ Scaling Latitude
+  53-03-00.000N
+ Horizontal Datum
+ NAD 83
+
+ Vertical Datum
+ CD  
+
+ Estimated horizontal accuracy of charted features
+ ±250 Metres
+
+ Originally digitized from Paper Chart
+ 3902
+
+ Category and Publication Date of Paper Chart
+ Reprint 27-JUN-97
+
+ Last Notice to Mariners
+ Evaluated: 19970609
+   Applied: 19970609
+
+ Depth Units
+ Metres
+
+ Magnetic Variation
+ Year   Declination   Annual Change
+ 1998      22°52'E       8.0'W
+
+ Features found in this file
+
+ Feature Code   Description                          Data Type     Layer   Z val
+ ------------  ------------                          ---------     -----   -----
+
+ ALTW           Tower in general, Fixed Point        Pt Symbols     100       n/a
+                Tour en général, Point de position d
+                éterminée                    
+                Previously / Antérieurement ALFXTW  
+                C.S.#/S.C.# 305,1/374,3             
+                Chart 1 / Carte no 1, Section B,22/E
+                ,20                          
+                Object/objet code: LNDMRK           
+                User number/Numéro d'utilisateur: 10
+                0                            
+                Topology/Topologie: OFF             
+
+ ALTWGE         Tower in general                     Pt Symbols     100       n/a
+                Tour en général                     
+                C.S.#/S.C.# 374,3                   
+                Chart 1 / Carte no 1, Section E,20  
+                Object/objet code: LNDMRK           
+                User number/Numéro d'utilisateur: 10
+                0                            
+                Topology/Topologie: OFF             
+
+ BQCA           Bottom Quality: coarse,         c    Pt Symbols     100       n/a
+                Genre ou qualité de fond marin: gros
+                sier, c                      
+                C.S.#/S.C.# 425,5                   
+                Chart 1 / Carte no 1, Section J,38  
+
+ BQCO           Bottom Quality: coral,          Co   Pt Symbols     100       n/a
+                Genre ou qualité de fond marin: cora
+                il, Co                       
+                C.S.#/S.C.# 425,5                   
+                Chart 1 / Carte no 1, Section J,10  
+
+ BQCY           Bottom Quality: clay,           Cy   Pt Symbols     100       n/a
+                Genre ou qualité de fond marin: argi
+                le, Cy                       
+                C.S.#/S.C.# 425,5                   
+                Chart 1 / Carte no 1, Section J,3   
+
+ BQFN           Bottom Quality: fine,           f    Pt Symbols     100       n/a
+                Genre ou qualité de fond marin: fin,
+                 f                           
+                No C.S.# / Pas de # S.C.            
+                Chart 1 / Carte no 1, Section J,30  
+
+ BQGR           Bottom Quality: gravel,         G    Pt Symbols     100       n/a
+                Genre ou qualité de fond marin: grav
+                ier, G                       
+                C.S.#/S.C.# 425,5                   
+                Chart 1 / Carte no 1, Section J,6   
+
+ BQMD           Bottom Quality: mud,            M    Pt Symbols     100       n/a
+                Genre ou qualité de fond marin: vase
+                , M                          
+                C.S.#/S.C.# 425,5                   
+                Chart 1 / Carte no 1, Section J,2   
+
+ BQRC           Bottom Quality: rock or shingle,  R  Pt Symbols     100       n/a
+                Genre ou qualité de fond marin: roch
+                e, rocheux, galets, R        
+                C.S.#/S.C.# 425,5                   
+                Chart 1 / Carte no 1, Section J,9   
+
+ BQSD           Bottom Quality: sand,           S    Pt Symbols     100       n/a
+                Genre ou qualité de fond marin: sabl
+                e, S                         
+                C.S.#/S.C.# 425,5                   
+                Chart 1 / Carte no 1, Section J,1   
+
+ BQSH           Bottom Q.: shells,oysters,mussels Sh Pt Symbols     100       n/a
+                Bottom quality: oysters, mussels, Sh
+                Genre ou qualité de fond marin: coqu
+                illes, Sh                    
+                C.S.#/S.C.# 425,5                   
+                Chart 1 / Carte no 1, Section J,11  
+
+ BQSS           Bottom Quality: stones or cobbles St Pt Symbols     100       n/a
+                Genre ou qualité de fond marin: pier
+                res, St                      
+                C.S.#/S.C.# 425,5                   
+                Chart 1 / Carte no 1, Section J,5   
+
+ CLIS           Small Island Outline/Symbol          Incr. Line     200       n/a
+                Petite île: symbole ou contour      
+                C.S.#/S.C.# 310,2                   
+                Not in Chart 1 / Exclu de la carte n
+                o 1                          
+
+ CLLW           Low Water Line / Drying Line         Incr. Line     200       n/a
+                Ligne de basses eaux                
+                C.S.#/S.C.# 411,1                   
+                Chart 1 / Carte no 1, Section I,30  
+
+ CLLWRL         Rocky Ledges Outline                 Incr. Line     200       n/a
+                Zone rocheuse: contour              
+                C.S.#/S.C.# 411,1                   
+                Chart 1 / Carte no 1, Section J,21  
+
+ CLLWRL1R       Rocky Ledges Symbol                  Pt Symbols     100       n/a
+                Zone rocheuse: symbole              
+                C.S.#/S.C.# 411,1                   
+                Not in Chart 1 / Exclu de la carte n
+                o 1                          
+
+ CLLWRL2R       Rocky Ledges Symbol                  Pt Symbols     100       n/a
+                Zone rocheuse: symbole              
+                C.S.#/S.C.# 411,1                   
+                Not in Chart 1 / Exclu de la carte n
+                o 1                          
+
+ CLLWRLLTME     Rocky Ledges, Medium  Left           Incr. Line     200       n/a
+                Zone rocheuse: symbole moyen gauche 
+                C.S.#/S.C.# 411,1                   
+                Chart 1 / Carte no 1, Section J,21  
+                Previously / Antérieurement CLLWRLRT
+                ME                           
+
+ CLLWRLLTSM     Rocky Ledges, Small Left             Incr. Line     200       n/a
+                Zone rocheuse: petit symbole gauche 
+                C.S.#/S.C.# 411,1                   
+                Chart 1 / Carte no 1, Section J,21  
+                Previously / Antérieurement CLLWRLRT
+                SM                           
+
+ CLSL           Coastline/Shoreline                  Incr. Line     200       n/a
+                Côte bien déterminée                
+                C.S.#/S.C.# 310,1                   
+                Chart 1 / Carte no 1, Section C,1   
+
+ CODTMR         Contour: depth in metres             Incr. Line     200       1.8
+                Isobathes, Contour bathymétrique: pr
+                ofondeurs en mètres          
+                C.S.#/S.C.# 411,1                   
+                Chart 1 / Carte no 1, Section I,30  
+   "                         "                       Incr. Line     200       5.5
+   "                         "                       Incr. Line     200      11.0
+   "                         "                       Incr. Line     200      18.3
+   "                         "                       Incr. Line     200      37.0
+   "                         "                       Incr. Line     200      55.0
+   "                         "                       Incr. Line     200      91.0
+   "                         "                       Incr. Line     200     110.0
+   "                         "                       Incr. Line     200     183.0
+
+ DLOFTR         Tide Rips/Overfalls, small scale     Pt Symbols     100       n/a
+                Remous, Clapotis                    
+                C.S.#/S.C.# 423,1                   
+                Chart 1 / Carte no 1, Section H,44  
+                Previously / Antérieurement DLOFTRLT
+
+ DLRA           Rock: awash                          Pt Symbols     100       n/a
+                Roche à fleur d'eau                 
+                C.S.#/S.C.# 421,3                   
+                Chart 1 / Carte no 1, Section K,12  
+
+ DLRK           Rock: sunken                         Pt Symbols     100       n/a
+                Roche submergée                     
+                C.S.#/S.C.# 421,4                   
+                Chart 1 / Carte no 1, Section K,13  
+
+ DLSF           Pinnacle/Snowflake Symbol            Pt Symbols     100       n/a
+                Roche qui couvre et découvre, asséch
+                ante                         
+                C.S.#/S.C.# 421,2                   
+                Chart 1 / Carte no 1, Section K,11  
+
+ DLWKSUNKEN     Wreck: sunken, not dangereus         Pt Symbols     100       n/a
+                Épave, submergée, non dangereuse, pr
+                ofondeur inconnue            
+                C.S.#/S.C.# 422,6                   
+                Chart 1 / Carte no 1, Section K,29  
+                Previously / Antérieurement DLWS, DL
+                WSS3                         
+
+ LAKE           Small Lake                           Incr. Line     200       n/a
+                Petit lac                           
+                C.S.#/S.C.# 353,6                   
+                Not in Chart 1 / Exclu de la carte n
+                o 1                          
+                Previously / Antérieurement CLLA    
+
+ NABNBN         Beacon, Position of                  Pt Symbols     100       n/a
+                Balises, position en général        
+                Previously / Antérieurement ALFXBN  
+                C.S.#/S.C.# 455,5                   
+                Chart 1 / Carte no 1, Section Q,80  
+
+ NABYLAODAS     Ocean Data Acquisition System, ODAS  Pt Symbols     100       n/a
+                Bouée SADO-Système d'acquisition de 
+                données océaniques           
+                C.S.#/S.C.# 462,9                   
+                Chart 1 / Carte no 1, Section Q,58/Q
+                ,130.6                       
+
+ NABYLP03       Lateral: Port Pillar  Large/Right    Pt Symbols     100       n/a
+                Latérale: Bouée de charpente, bâbord
+                , gros symbole droit         
+                C.S.#/S.C.# 467                     
+                Chart 1 / Carte no 1, Section Q,g   
+
+ NABYLS11       Lateral: Starbd Pillar  Large/Left   Pt Symbols     100       n/a
+                Latérale: Bouée à charpente, tribord
+                , gros symbole gauche        
+                C.S.#/S.C.# 467                     
+                Not in Chart 1 / Exclu de la carte n
+                o 1                          
+
+ NALTLT         Light, Position of                   Pt Symbols       0       n/a
+                Feu, position                       
+                Previously / Antérieurement ALFXLT  
+                C.S.#/S.C.# 470,5                   
+                Chart 1 / Carte no 1, Section P,1   
+   "                         "                       Pt Symbols     100       n/a
+
+ NALTRLUNPR     Unusable Portion of a range line     Pt-Pt Line     100       n/a
+                Portion inutilisable d'une ligne d'a
+                lignement                    
+                C.S.#/S.C.# 433                     
+                Not in Chart 1 / Exclu de la carte 1
+                Previously NADL / Antérieurement NAD
+                L                            
+
+ NALTRLUPR      Usable Portion of a Range Line       Pt-Pt Line     100       n/a
+                Portion utilisable d'une ligne d'ali
+                gnement                      
+                C.S.#/S.C.# 433                     
+                Not in Chart 1 / Exclu de la carte 1
+                Previously CAR1 / Antérieurement CAR
+                1                            
+
+ NALTSL         Sector Light                         Pt-Pt Line     100       n/a
+                Feu à secteurs                      
+                C.S.#/S.C.# 475                     
+                Chart 1 / Carte no 1, Section P,40/P
+                ,42-43                       
+
+ NOTE           File Notes: text, comments           File Notes       0       n/a
+                Note de filière: textes, commentaire
+                s                            
+                Do not use for production / Ne pas u
+                tiliser pour production      
+
+ NP01RD         Radio Beacon Circular                Pt Symbols     100       n/a
+                Cercle radar, radio                 
+                C.S.#/S.C.# 480,1/481.1             
+                Chart1, Section S,10                
+
+ NP05RD         Radiobeacon                          Pt Symbols     100       n/a
+                Radiophare                          
+                C.S.#/S.C.# 480-482                 
+                Chart 1 / Carte no 1, Section S,10/S
+                ,16                          
+
+ NPCIDB         Calling-in point, double             Pt-Pt Line     100       n/a
+                Point d'appel radio: double         
+                C.S.#/S.C.# 488                     
+                Chart 1 / Carte no 1, Section M,40 V
+                TS                           
+                See NTX$GRAPHICS/Voir NTX$GRAPHICS  
+
+ NPLI           Light Flash                          Pt Symbols       0       n/a
+                Feu                                 
+                C.S.#/S.C.# 470,6                   
+                Chart 1 / Carte no 1, Section P,1/P,
+                11                           
+                Previously/Antérieurement NPLI1,NPLI
+                2, NPLI3, NPLI4, NPLI5       
+   "                         "                       Pt Symbols     100       n/a
+
+ NPLIBUOY       Light Flash for Buoys                Pt Symbols     100       n/a
+                Feu pour bouée                      
+                C.S.#/S.C.# 470,6                   
+                Chart 1 / Carte no 1, Section Q,7   
+
+ NPLTAE         Air/Aeronautical Light               Pt Symbols     100       n/a
+                Feu aéronautique                    
+                C.S.#/S.C.# 476,1                   
+                Chart 1 / Carte no 1, Section P,60  
+
+ POLABEL        Polygon Display Labels               Char. Text     200       n/a
+                Désignation de polygone             
+
+ POLCLOSE       Polygon Closing Line                 Incr. Line     200       n/a
+                Ligne de fermeture pour polygone.   
+   "                         "                       Incr. Line     200       n/a
+
+ POLNEAT        Neatline - Topological layer         Pt-Pt Line     200       n/a
+                L'orle - Couche topologique         
+
+ RADARRACONOD   Racons                               Pt Symbols     100       n/a
+                Radar Transponder Beacon / without p
+                osition dot.                 
+                Balise répondeuse radar / sans point
+                 de position                 
+                C.S.#/S.C.# 486,2-4                 
+                Chart 1 / Carte no 1, Section S,3   
+                Previously / Antérieurement NP03RD  
+
+ RADARRACONS    Racons                               Pt Symbols     100       n/a
+                Radar Transponder Beacon / with posi
+                tion dot.                    
+                Balise répondeuse radar / avec point
+                 de position.                
+                C.S.#/S.C.# 486,2-4                 
+                Chart 1 / Carte no 1, Section S,3   
+                Previously / Antérieurement NP03RD  
+
+ RADARREF       Radar conspicuous object             Pt Symbols     100       n/a
+                Radar conspic object: Artificial fea
+                tures / with position dot    
+                Amers Radar: Les éléments anthropiqu
+                es / avec point de position  
+                C.S.#/S.C.#485,2                    
+                Chart 1 / Carte no 1, Section S,4   
+                Previously / Antérieurement NARRA3  
+
+ SGSL           Soundings: sloped                    Soundings      100       n/a
+                Sonde: inclinée                     
+                C.S.#/S.C.# 412,1                   
+
+ TCTSEBB        Tidal Stream; Ebb Stream, (arrow)    Pt-Pt Line     100       n/a
+                Courant de jusant: flèche           
+                C.S.#/S.C.# 407,4                   
+                Chart 1 / Carte no 1, Section H,41  
+                Previously / Antérieurement TCCU    
+
+ TCTSFLOOD      Tidal Stream; Flood Stream, (arrow)  Pt-Pt Line     100       n/a
+                Courant de flot: flèche             
+                C.S.#/S.C.# 407,4                   
+                Chart 1 / Carte no 1, Section H,40  
+                Previously / Antérieurement TCTF    
+
+ TEXTBK         Text/Names (black)                   Char. Text       0       n/a
+                Text/Noms, (noir)                   
+                Previously / Antérieurement ZPDM, ZP
+                MT, ZPSK                     
+   "                         "                       Char. Text     100       n/a
+
+ TEXTGY         Text/Names (grey)                    Char. Text     100       n/a
+                Text/Noms, (gris)                   
+                Previously / Antérieurement ZPDM, ZP
+                MT, ZPSK                     
+
+ TEXTNP         Text/Names (nautical purple)         Char. Text     100       n/a
+                Text/Noms, (pourpre)                
+                Previously / Antérieurement ZPDM, ZP
+                MT, ZPSK                     

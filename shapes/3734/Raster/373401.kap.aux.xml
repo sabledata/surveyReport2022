@@ -1,0 +1,8 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="BSB_KNP">SC=36028,GD=NAD83,PR=MERCATOR,PP=52.583333,PI=0.083333,SP=,SK=0.000000,TA=90.000000,UN=FATHOMS AND FEET,SD=HHWLT,DX=3.602800,DY=3.602800</MDI>
+  </Metadata>
+  <Metadata domain="Esri">
+    <MDI key="PyramidResamplingType">NEAREST</MDI>
+  </Metadata>
+</PAMDataset>

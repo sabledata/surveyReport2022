@@ -1,0 +1,87 @@
+
+
+                    Document Description for 70046.ntx
+
+ Date of creation of this listing     : 20-Oct-1995
+ Date of last change to the data file : 16-OCT-1995
+                     ENC Edition Date :  8-SEP-1995
+
+ Title
+ JACKSON NARROWS                                                                
+
+ Geographic Limits
+ SW  52-31-09.825N, 128-18-35.288W
+ SE  52-31-09.825N, 128-17-22.038W
+ NE  52-31-43.724N, 128-17-22.038W
+ NW  52-31-43.724N, 128-18-35.288W
+
+ Projection
+ Mercator
+
+ Scale
+ 1:12238
+
+ Scaling Latitude
+  52-35-00.000N
+ Horizontal Datum
+ NAD 83
+
+ Vertical Datum
+ CD  
+
+ Estimated horizontal accuracy of charted features
+ ±15 Metres
+
+ Originally digitized from Paper Chart
+ 3734 (inset)
+
+ Category and Publication Date of Paper Chart
+ Reprint May 24, 1991
+
+ Last Notice to Mariners
+ Evaluated: May 24, 1991 Applied: 254-89
+
+ Depth Units
+ Fathoms and Feet
+
+ Magnetic Variation
+ Year   Declination   Annual Change
+ 1995      22°50'E       7.8'W
+
+ Features found in this file
+
+ Feature Code   Description                          Data Type     Layer Z value
+ ------------  ------------                          --------      ----- -------
+
+ CLLWRLLTSM     Rocky Ledges, Small Left             Incr. Line    200       n/a
+                Zone rocheuse: petit symbole gauche 
+                C.S.#/S.C.# 411,1                   
+                Chart 1 / Carte no 1, Section J,21  
+                Previously / Antérieurement CLLWRLRT
+                SM                           
+
+ CLSL           Coastline/Shoreline                  Incr. Line    200       n/a
+                Côte bien déterminée                
+                C.S.#/S.C.# 310,1                   
+                Chart 1 / Carte no 1, Section C,1   
+
+ CODTFF         Contour: depth in fathoms            Incr. Line    200       6.0
+                Isobathes, Contour bathymétrique: pr
+                ofondeurs en brasses         
+                C.S.#/S.C.# 411,1                   
+                Chart 1 / Carte no 1, Section I,30  
+
+ DLRK           Rock: sunken                         Pt Symbols    100       n/a
+                Roche submergée                     
+                C.S.#/S.C.# 421,4                   
+                Chart 1 / Carte no 1, Section K,13  
+
+ GBNEATLINEIN   Inner Neatline                       Pt-Pt Line    200       n/a
+                Orle intérieure                     
+                Previously / Antérieurement NEAT    
+
+ POLABEL        Polygon Display Labels               Char. Text    200       n/a
+                Désignation de polygone             
+
+ TEXT           Text/Names (black)                   Char. Text    100       n/a
+                Texte/Noms, (noir)                  

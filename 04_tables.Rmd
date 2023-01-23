@@ -1,0 +1,442 @@
+# Tables
+
+(ref:table1Caption) Spatial and depth stratum allocation and completed set counts (blue) for the `r yr` Sablefish research and assessment survey.
+
+
+```{r table1, echo=FALSE}
+
+       Strata      <- c(paste( "S", "\\textsubscript{1}", " (South West Coast Vancouver Island or SWCVI)", sep=''),
+                        paste( "S", "\\textsubscript{2}", " (North West Coast Vancouver Island or NWCVI)", sep=''),
+                        paste( "S", "\\textsubscript{3}", " (Queen Charlotte Sound or QCS)", sep=''),                        
+                        paste( "S", "\\textsubscript{4}", " (South West Coast Haida Gwaii or SWCHG)", sep=''),                       
+                        paste( "S", "\\textsubscript{5}", " (North West Coast Haida Gwaii or NWCHG)", sep=''),                 
+                               "Total ")
+       act.strata  <- paste("select Year, DEPTH_STRATUM, SPATIAL_STRATUM, COUNT([SET]) AS sets ",
+                           "from dbo.GFBIO_RESEARCH_TRIPS ",
+                           "group by Year, DEPTH_STRATUM, SPATIAL_STRATUM ",
+                           "having (Year = ", yr, " )", sep="")
+       #surv.strata <- GetSQLData(act.strata,"Sablefish")
+       #write.table(surv.strata, file = paste(path,"table1.csv", sep=''),row.names=FALSE, na="", col.names=TRUE, sep=",")
+       surv.strata <-  read.csv(paste(path,'table1.csv', sep=''), header=T)
+
+       RD1      <- c(6,6,8,6,6,32)
+       RD1fish  <- surv.strata$sets[surv.strata$DEPTH_STRATUM =="RD1"]
+       RD1fish[6]  <- sum(surv.strata$sets[surv.strata$DEPTH_STRATUM =="RD1"])
+       RD2fish  <- surv.strata$sets[surv.strata$DEPTH_STRATUM =="RD2"]
+       RD2fish[6]  <- sum(surv.strata$sets[surv.strata$DEPTH_STRATUM =="RD2"])
+       RD3fish  <- surv.strata$sets[surv.strata$DEPTH_STRATUM =="RD3"]
+       RD3fish[6]  <- sum(surv.strata$sets[surv.strata$DEPTH_STRATUM =="RD3"])     
+       RD2      <- c(8,7,6,6,7,34)
+       RD3      <- c(5,5,5,5,5,25)
+       Total    <- c(19,18,19,17,18,91)
+       Totfish  <- c(RD1fish[1]+RD2fish[1]+RD3fish[1], RD1fish[2]+RD2fish[2]+RD3fish[2],
+                     RD1fish[3]+RD2fish[3]+RD3fish[3], RD1fish[4]+RD2fish[4]+RD3fish[4],
+                     RD1fish[5]+RD2fish[5]+RD3fish[5], RD1fish[6]+RD2fish[6]+RD3fish[6]) # addition
+       dataf    <- data.frame(Strata, RD1, RD1fish, RD2, RD2fish,RD3, RD3fish, Total, Totfish) 
+       yrRD1    <- paste("RD", "\\textsubscript{1} ",yr, sep='') 
+       yrRD2    <- paste("RD", "\\textsubscript{2} ",yr, sep='')
+       yrRD3    <- paste("RD", "\\textsubscript{3} ",yr, sep='')
+       yrTot    <- paste("Total ", yr, sep="")
+       
+       colnames(dataf) <- c("Spatial Strata", paste("RD", "\\textsubscript{1}", sep=''), yrRD1, 
+                                              paste("RD", "\\textsubscript{2}", sep=''), yrRD2,
+                                              paste("RD", "\\textsubscript{3}", sep=''), yrRD3,
+                                              "Total", yrTot)
+       
+       
+   
+       kableExtra::kable(dataf, booktabs = TRUE,linesep = "",
+                   format = "latex",
+                   escape = F, # allows textsubscript latex
+                   caption = "(ref:table1Caption)") %>%
+              row_spec(0,    bold = T) %>%
+              row_spec(5, hline_after = T) %>%
+              column_spec(2, width  = "0.5cm") %>%
+              column_spec(3, width  = "0.5cm", color="blue" ) %>%
+              column_spec(4, width  = "0.5cm") %>%
+              column_spec(5, width  = "0.5cm", color="blue") %>% 
+              column_spec(6, width  = "0.5cm") %>% 
+              column_spec(7, width  = "0.5cm", color="blue") %>%          
+              column_spec(8, width  = "0.7cm") %>%
+              column_spec(9, width  = "0.5cm", color="blue") %>% 
+              row_spec(0, color="black") %>%
+              row_spec(6, bold=T) %>%
+              add_header_above(c(" "= 1, "Depth Strata" = 6, " " = 2), bold=T) %>%
+       kableExtra::kable_styling(font_size = 9, position = "left",latex_options = "hold_position")
+  
+  
+```
+(ref:table2Caption) Target number of 25-trap camera survey sets and completed counts (blue) for the `r yr` Sablefish research and assessment survey.
+
+
+```{r table2,  echo=FALSE}
+    # refer to procedure exec dbo.Build_Seabird_tables at end for counts 
+    # SELECT SPATIAL_STRATUM, DEPTH_STRATUM, YEAR, COUNT(FE_MAJOR_LEVEL_ID) AS CountSets
+    # FROM  (SELECT SENS.YEAR, SENS.TRIP_ID, SENS.FE_MAJOR_LEVEL_ID, SENS.SBE, SENS.ACC, SENS.CTD, SENS.CAM, SENS.DO, 
+    # derivedtbl_1.DEPTH_STRATUM,     derivedtbl_1.SPATIAL_STRATUM
+    # FROM  (SELECT  dbo.SURVEY_trips_vw.YEAR, FE.TRIP_ID, FE.FE_MAJOR_LEVEL_ID, FE.FE_MINOR_LEVEL_ID, 
+    # CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%sbe39%' THEN 1 ELSE 0 END AS SBE, 
+    # CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%accelerometer%' THEN 1 ELSE 0 END AS ACC, 
+    # CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%ctd%' THEN 1 ELSE 0 END AS CTD, 
+    # CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%camera%' THEN 1 ELSE 0 END AS CAM, 
+    # CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%oxygen%' THEN 1 ELSE 0 END AS DO
+    # FROM  GFBioSQL.dbo.TRAP_SENSOR INNER JOIN
+    # GFBioSQL.dbo.FE_EVENT_SENSOR ON GFBioSQL.dbo.TRAP_SENSOR.FE_EVENT_SENSOR_CODE = 
+    # GFBioSQL.dbo.FE_EVENT_SENSOR.FE_EVENT_SENSOR_CODE INNER JOIN
+    # GFBioSQL.dbo.FISHING_EVENT AS FE ON GFBioSQL.dbo.TRAP_SENSOR.FISHING_EVENT_ID = 
+    # FE.FISHING_EVENT_ID INNER JOIN
+    # dbo.SURVEY_trips_vw ON FE.TRIP_ID = dbo.SURVEY_trips_vw.TRIP_ID
+    # GROUP BY FE.TRIP_ID, FE.FE_MAJOR_LEVEL_ID, FE.FE_MINOR_LEVEL_ID, dbo.SURVEY_trips_vw.YEAR, 
+    # GFBioSQL.dbo.FE_EVENT_SENSOR.FE_EVENT_SENSOR_DESC
+    # HAVING (dbo.SURVEY_trips_vw.YEAR = 2022)) AS SENS INNER JOIN
+    # (SELECT Year, TRIP_ID, [SET], DEPTH_STRATUM, SPATIAL_STRATUM, SET_TYPE
+    # FROM   dbo.GFBIO_RESEARCH_TRIPS) AS derivedtbl_1 ON SENS.TRIP_ID = 
+    # derivedtbl_1.TRIP_ID AND SENS.FE_MAJOR_LEVEL_ID = derivedtbl_1.[SET]
+    # WHERE (SENS.CAM = 1) AND (NOT (SENS.FE_MAJOR_LEVEL_ID IN (5,11,18,21,30,64)))) AS SENS2
+		# GROUP BY DEPTH_STRATUM, SPATIAL_STRATUM, YEAR		ORDER BY DEPTH_STRATUM, SPATIAL_STRATUM
+
+
+    Strata    <-   c(paste( "S", "\\textsubscript{1}", " (SWCVI)", sep='') , 
+                     paste( "S", "\\textsubscript{2}", " (NWCVI)", sep='') ,
+                     paste( "S", "\\textsubscript{3}", " (QCS)",   sep='') ,
+                     paste( "S", "\\textsubscript{4}", " (SWCHG)", sep='') ,
+                     paste( "S", "\\textsubscript{5}", " (NWCHG)", sep='') )
+    Fm100250  <-   c(2,2,2,2,2)
+    RD1       <-   c(2,0,0,1,2)
+    Fm250450  <-   c(2,2,2,2,2)
+    RD2       <-   c(2,2,1,0,3)
+    Fm450750  <-   c(1,1,1,1,1)
+    RD3       <-   c(0,1,1,1,1)
+    Total     <-   c(5,5,5,5,5)  
+    
+    Totalyr    <-    c(RD1[1] + RD2[1] + RD3[1], RD1[2] + RD2[2] + RD3[2],
+                     RD1[3] + RD2[3] + RD3[3], RD1[4] + RD2[4] + RD3[4],
+                     RD1[5] + RD2[5] + RD3[5])
+    
+    datastrata<-   data.frame(Strata, Fm100250, RD1, Fm250450,RD2, Fm450750,RD3,Total,Totalyr)    
+
+    LastLine  <-   c('', sum(datastrata$Fm100250), sum(datastrata$RD1),
+                     sum(datastrata$Fm250450), sum(datastrata$RD2),
+                     sum(datastrata$Fm450750), sum(datastrata$RD3),
+                     sum(datastrata$Total) ,sum(datastrata$Total))
+   
+    datastrata <- rbind(datastrata, LastLine)
+    datastrata$Strata <- as.character(datastrata$Strata)
+    datastrata$Strata[6]  <- "Total"
+    datastrata$Fm100250<-as.character(datastrata$Fm100250)
+    datastrata$Fm250450<-as.character(datastrata$Fm250450)
+    datastrata$Fm450750<-as.character(datastrata$Fm450750)  
+    datastrata$RD1     <-as.character(datastrata$RD1)
+    datastrata$RD2     <-as.character(datastrata$RD2)
+    datastrata$RD3     <-as.character(datastrata$RD3) 
+    datastrata$Total   <-as.character(datastrata$Total)     
+ 
+
+    colnames(datastrata) <- c("Strata", paste("RD", "\\textsubscript{1}", sep='') , 
+                              paste("RD", "\\textsubscript{1}"," 2022", sep=''), 
+                                        paste("RD", "\\textsubscript{2}", sep='') , 
+                              paste("RD", "\\textsubscript{2}"," 2022", sep=''),
+                                        paste("RD", "\\textsubscript{3}", sep='') , 
+                              paste("RD", "\\textsubscript{3}"," 2022", sep=''), 
+                                          "Total", "Total 2022") 
+   
+       kableExtra::kable(datastrata, booktabs = TRUE,
+                         linesep = "",
+                         align = c("l","c","c","c","c","c","c","c","c","c"),
+                         format = "latex",
+                         escape = F, # allows textsubscript latex
+                         caption = "(ref:table2Caption)") %>%
+              row_spec(0,    bold = T) %>%
+              row_spec(5, hline_after = T) %>%
+              column_spec(1, width  = "3.3cm") %>%
+              column_spec(2, width  = "1.1cm") %>%
+              column_spec(3, width  = "0.7cm", color="blue" ) %>%
+              column_spec(4, width  = "1.0cm") %>%
+              column_spec(5, width  = "0.7cm", color="blue") %>% 
+              column_spec(6, width  = "1.0cm") %>% 
+              column_spec(7, width  = "0.7cm", color="blue") %>% 
+              column_spec(8, width  = "0.7cm", color="blue") %>%          
+              column_spec(9, width  = "0.7cm") %>%
+              column_spec(10,width  = "0.7cm", color="blue") %>%
+              row_spec(0, color="black") %>%
+              row_spec(6, bold=T) %>%
+              add_header_above(c(" "= 1, "Sets in Depth Strata" = 6, " " = 2), bold=T) %>%
+       kableExtra::kable_styling(font_size = 9, position = "left",latex_options = "hold_position")
+    
+
+```
+
+(ref:table3Caption) Details of completed 60 trap camera movement sets. Seabird temperature and pressure recorder (SBE39), Actigraph accelerometer (AXL) and camera (CAM) are indicated with an 'x'.
+
+```{r table3,  echo=FALSE}
+
+  trap60 <- paste("SELECT YEAR, TRIP_ID, set_no, becket_no, trap_no, MAX(SBE39) AS SBE39, MAX(HOBO) AS HOBO,  ",
+                  " MAX(CAM) AS CAM ",
+                  " FROM (SELECT  dbo.SURVEY_trips_vw.YEAR, FE.TRIP_ID, FE.FE_MAJOR_LEVEL_ID AS set_no,  ",
+                  " FE.FE_SUB_LEVEL_ID AS becket_no,  ",
+                  " FE.FE_MINOR_LEVEL_ID AS trap_no, CASE WHEN FE_EVENT_SENSOR_DESC  ",
+                  " LIKE '%sbe39%' THEN 1 ELSE 0 END AS SBE39,  ",
+                  " CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%accelerometer%' THEN 1 ELSE 0 END AS HOBO,  ",
+                  " CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%ctd%' THEN 1 ELSE 0 END AS CTD,  ",
+                  " CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%camera%' THEN 1 ELSE 0 END AS CAM,  ",
+                  " CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%oxygen%' THEN 1 ELSE 0 END AS DO ",
+                  " FROM  GFBioSQL.dbo.TRAP_SENSOR INNER JOIN ",
+                  "  GFBioSQL.dbo.FE_EVENT_SENSOR ON GFBioSQL.dbo.TRAP_SENSOR.FE_EVENT_SENSOR_CODE =  ",
+                  " GFBioSQL.dbo.FE_EVENT_SENSOR.FE_EVENT_SENSOR_CODE INNER JOIN ",
+                  " GFBioSQL.dbo.FISHING_EVENT AS FE ON GFBioSQL.dbo.TRAP_SENSOR.FISHING_EVENT_ID =",
+                  " FE.FISHING_EVENT_ID INNER JOIN ",
+                  " dbo.SURVEY_trips_vw ON FE.TRIP_ID = dbo.SURVEY_trips_vw.TRIP_ID ",
+                  " GROUP BY FE.TRIP_ID, FE.FE_MAJOR_LEVEL_ID, FE.FE_SUB_LEVEL_ID,  ",
+                  " FE.FE_MINOR_LEVEL_ID, dbo.SURVEY_trips_vw.YEAR, ",          
+                  " GFBioSQL.dbo.FE_EVENT_SENSOR.FE_EVENT_SENSOR_DESC  ", 
+                  " HAVING  (dbo.SURVEY_trips_vw.YEAR = 2022) AND (FE.FE_MAJOR_LEVEL_ID IN (5,11,18,21,30,64)) ",
+                  " ) AS SENS  GROUP BY YEAR, TRIP_ID, set_no, becket_no, trap_no ",
+                  " order by set_no, becket_no, trap_no", sep="")
+    #trapcam  <- GetSQLData(trap60,"Sablefish")
+    #write.table(trapcam, file = paste(path,"table3.csv",sep=''),row.names=FALSE, na="",col.names=TRUE, sep=",")
+    trapcam   <-  read.csv(paste(path,'table3.csv',sep=''), header=T)
+    trapcam   <-  trapcam[,c(-1,-2)]
+    Strata    <-  c(paste( "S", "\\textsubscript{1}", " (SWCVI)", sep=''), " ", " ", 
+                    paste( "S", "\\textsubscript{1}", " (SWCVI)", sep=''), " ", " ", 
+                    paste( "S", "\\textsubscript{1}", " (SWCVI)", sep=''), " ", " ", 
+                    paste( "S", "\\textsubscript{1}", " (SWCVI)", sep=''), " ", " ", 
+                    paste( "S", "\\textsubscript{2}", " (NWCVI)", sep=''), " ", " ", 
+                    paste( "S", "\\textsubscript{5}", " (NWCHG)", sep=''), " ", " ")
+    Trap.camera       <- cbind(Strata, trapcam)
+    Trap.camera$set_no<- as.character(Trap.camera$set_no)
+   
+    Trap.camera$SBE39 <- as.character(Trap.camera$SBE39)
+    Trap.camera$HOBO  <- as.character(Trap.camera$HOBO)
+    Trap.camera$CAM   <- as.character(Trap.camera$CAM)
+    Trap.camera$SBE39 <- "x"
+    Trap.camera$HOBO  <- "x"
+    Trap.camera$CAM   <- "x"
+    Trap.camera$set_no<- cleanf(Trap.camera$set_no)
+    
+    colnames(Trap.camera)  <- c( "Spatial Strata", "Set", "Becket id" , "Trap id", "SBE39", "AXL", "CAM")
+    
+    kableExtra::kable(Trap.camera, booktabs = TRUE, linesep = "",
+                      align = c("l","r","r","r","c","c","c"),
+                      escape = F, # allows textsubscript latex
+                      format = "latex",
+                      caption = "(ref:table3Caption)") %>%
+                      row_spec(0,    bold = T) %>%
+                      row_spec(c(3,6,9,12,15), hline_after = T) %>%
+                      
+    kableExtra::kable_styling(font_size = 9, position = "left",latex_options = "hold_position")
+
+```
+\clearpage
+
+(ref:table4Caption) Summary of species captured during the `r yr` survey StRS sets conducted by the `r boat`. No value in both weight and count fields indicate trace weights.
+
+```{r table4,  echo=FALSE}
+
+    options(knitr.kable.NA = '')
+    dtSP   <- paste("exec procRReport_SpeciesSummary ",yr," ,'StRS'",sep="")
+    #datSP  <- GetSQLData(dtSP,"Sablefish")
+    #write.table(datSP, file = paste(path,"table4.csv",sep=''),row.names=FALSE, na="",col.names=TRUE, sep=",")
+    datSP  <-  read.csv(paste(path,'table4.csv',sep=''), header=T)
+    datSP$Total_weight     <- formatC(datSP$Total_weight, format="d", big.mark=",") 
+       
+    dat1SP <- datSP[,c(-1)] 
+    dat1SP <- dat1SP[,c(-3)]
+    dat1SP <- dat1SP[,c(-2)]
+    dat1SP <- dat1SP[,c(-6)]  # trim columns
+    cleandataSP<-dat1SP
+    cleandataSP$Summary_sp     <- cleanf(cleandataSP$Summary_sp)  #  remove duplicates function
+    cleandataSP$Common_Name    <- stringr::str_to_title(as.character(cleandataSP$Common_Name))
+    cleandataSP$Common_Name    <- gsub("Spiny Dogfish","North Pacific Spiny Dogfish", cleandataSP$Common_Name)
+    cleandataSP$Total_weight   <- gsub("NA", "", cleandataSP$Total_weight)
+    colnames(cleandataSP)      <- c( "Category", "Common Name", "Scientific Name" , "Count", "Weight(kg)")
+    cleandataSP[25,2]          <- "Fragile Sea Urchin"
+    
+    
+    kableExtra::kable(cleandataSP,
+                      booktabs = TRUE,linesep = "",
+                      align = c("l","l","l","l","l"),
+                      format = "latex",  caption = "(ref:table4Caption)") %>%
+                      row_spec(0,  bold = T) %>%
+                      row_spec(8,  hline_after = T) %>%
+                      row_spec(20, hline_after = T) %>%
+                      row_spec(23, hline_after = T) %>%
+                      kableExtra::kable_styling(font_size = 8, position = "left",
+                                                latex_options = "hold_position")
+```
+\clearpage
+
+(ref:table5Caption) Summary of species captured by the `r boat` during the `r yr` survey standardized sets conducted at Finlayson inlet locality. No value in both weight and count fields indicate trace weights.
+
+```{r table5, echo=FALSE}
+
+  options(knitr.kable.NA = '')
+  dtSP   <- paste("exec procRReport_SpeciesSummary ",yr," ,'INLET STANDARDIZED'",sep="")
+  #datSP.summ  <- GetSQLData(dtSP,"Sablefish")
+  #write.table(datSP.summ, file = paste(path,"table5.csv",sep=''),row.names=FALSE, na="",col.names=TRUE, sep=",")
+  datSP.summ   <-  read.csv(paste(path,'table5.csv',sep=''), header=T)
+  
+  dat1SP <- datSP.summ[,c(-1)] 
+  dat1SP <- dat1SP[,c(-3)]
+  dat1SP <- dat1SP[,c(-2)]
+  dat1SP <- dat1SP[,c(-6)]
+  cleandataSPi<-dat1SP
+  cleandataSPi$Summary_sp <- cleanf(cleandataSPi$Summary_sp)  #use the remove duplicates function
+  cleandataSPi$Common_Name    <- stringr::str_to_title(as.character(cleandataSPi$Common_Name))
+  colnames(cleandataSPi)  <- c( "Category", "Common Name", "Scientific Name" , "Count", "Weight(kg)")
+
+  kableExtra::kable(cleandataSPi,
+                    booktabs = TRUE,linesep = "",
+                    align = c("l","l","l","l","l"),
+                    format = "latex",  caption = "(ref:table5Caption)") %>%
+                    row_spec(0,  bold = T) %>%
+                    row_spec(1,  hline_after = T) %>%
+                    row_spec(2,  hline_after = T) %>%
+                    kableExtra::kable_styling(font_size = 8, position = "left",latex_options = "hold_position")
+
+```
+
+
+(ref:table6Caption) Summary of Sablefish sex ratios and mean fork length measurements collected during the `r yr` stratified random sets by spatial and depth stratum.
+
+```{r table6, echo=FALSE}
+
+    newdata2       <-   read.csv(paste(path,'table6.csv',sep=''), header=T)  # created in results section
+    data_mod1      <-   read.csv(paste(path,'table6a.csv',sep=''),header=T) # created in results section
+    # head(newdata2)
+    data_mod1[4,1] <-"S1"
+    data_mod1[4,2] <-"RD"
+    data_mod1[8,1] <-"S2"
+    data_mod1[8,2] <-"RD"
+    data_mod1[12,1] <-"S3"
+    data_mod1[12,2] <-"RD" 
+    data_mod1[16,1] <-"S4"
+    data_mod1[16,2] <-"RD" 
+    data_mod1[20,1] <-"S5"
+    data_mod1[20,2] <-"RD"  
+    
+    data_mod1$Depth <- gsub("RD1       ","RD1",data_mod1$Depth)
+    data_mod1$Depth <- gsub("RD2       ","RD2",data_mod1$Depth)
+    data_mod1$Depth <- gsub("RD3       ","RD3",data_mod1$Depth)
+    
+    data_mod <- cbind(data_mod1[1:2], stack(data_mod1[3:4]))
+    data_mod$label <- paste(data_mod$Spatial, data_mod$Depth, sep='')
+    #print(data_mod)
+    big.value <- 1
+
+    w<- data_mod %>%
+        group_by(Spatial,Depth) %>%
+     do({
+       p <- ggplot(., aes(x = Spatial, y = values, fill=ind)) + 
+            geom_bar(stat="identity", position = position_dodge(), width=0.8,alpha = 0.5) + guides(fill=FALSE)  +
+            scale_fill_manual(values = c("Females" = "#0084A8",
+                                         "Males" = "#00cc99"))  +
+         ylim(0, big.value) +
+         theme_void() 
+         #ggsave(p, filename = paste0(path, "bar_", unique(.$label), ".png"), 
+          #     width = 0.2, height = 0.21)  # create many small figures
+         invisible(.) 
+     })
+    
+    newdata2$label <- paste(data_mod1$Spatial, data_mod1$Depth, sep='')  #get labels from other table
+
+    newdata2[1,1] <-   paste( "S", "\\textsubscript{1}", sep='')
+    newdata2[5,1] <-   paste( "S", "\\textsubscript{2}", sep='')
+    newdata2[9,1] <-   paste( "S", "\\textsubscript{3}", sep='')
+    newdata2[13,1] <-  paste( "S", "\\textsubscript{4}", sep='')
+    newdata2[17,1] <-  paste( "S", "\\textsubscript{5}", sep='')
+    
+    newdata2[1,2] <-   paste( "RD", "\\textsubscript{1}", sep='')
+    newdata2[2,2] <-   paste( "RD", "\\textsubscript{2}", sep='')
+    newdata2[3,2] <-   paste( "RD", "\\textsubscript{3}", sep='')
+    
+    newdata2[5,2] <-   paste( "RD", "\\textsubscript{1}", sep='')
+    newdata2[6,2] <-   paste( "RD", "\\textsubscript{2}", sep='')
+    newdata2[7,2] <-   paste( "RD", "\\textsubscript{3}", sep='')
+    
+    newdata2[9,2] <-   paste( "RD", "\\textsubscript{1}", sep='')
+    newdata2[10,2] <-  paste( "RD", "\\textsubscript{2}", sep='')
+    newdata2[11,2] <-  paste( "RD", "\\textsubscript{3}", sep='')
+
+    newdata2[13,2] <-  paste( "RD", "\\textsubscript{1}", sep='')
+    newdata2[14,2] <-  paste( "RD", "\\textsubscript{2}", sep='')
+    newdata2[15,2] <-  paste( "RD", "\\textsubscript{3}", sep='')   
+
+    newdata2[17,2] <-  paste( "RD", "\\textsubscript{1}", sep='')
+    newdata2[18,2] <-  paste( "RD", "\\textsubscript{2}", sep='')
+    newdata2[19,2] <-  paste( "RD", "\\textsubscript{3}", sep='') 
+    
+    newdata2 <-  newdata2 %>%
+                mutate(Sparkline = 
+                       paste0("\\raisebox{.01\\height} {\\includegraphics[width=0.4cm]{",path,"bar_",unique(.$label),".png}}") )
+    
+    newdata3  <-  newdata2[,c(1,2,9,3,4,5,6,7),] 
+    names(newdata3) <- c("Spatial","Depth", "barpolt","Males","Females","Males","Females", "Tagged")
+      
+    kableExtra::kable(newdata3, row.names = FALSE,
+                booktabs = TRUE,   linesep = "", escape = F, # allows textsubscript latex
+                format = "latex",  caption = "(ref:table6Caption)") %>%
+      
+        add_header_above(c( "Strata"= 2,
+                            "Proportion" = 3, 
+                            "Mean Fork Length (mm)" = 3),bold=T) %>%  
+      
+    kableExtra::kable_styling(font_size = 9, position = "left", latex_options = "hold_position") %>%
+                row_spec(0,    bold = T) %>%
+                row_spec(3,    hline_after = T) %>%
+                row_spec(4,    bold = T, hline_after = T) %>%
+                row_spec(7,    hline_after = T) %>% 
+                row_spec(8,    bold = T, hline_after = T) %>%      
+                row_spec(11,   hline_after = T) %>%
+                row_spec(12,   bold = T, hline_after = T) %>%      
+                row_spec(15,   hline_after = T)   %>% 
+                row_spec(16,   bold = T, hline_after = T) %>%   
+                row_spec(19,   hline_after = T)   %>% 
+                row_spec(20,   bold = T)
+     
+    
+  
+      
+```
+\clearpage
+
+(ref:table7Caption) Canadian tag recovery counts from all sets during the 2021 survey, by distance from release site and years at liberty. Distances were determined using the great circle distance between the release location and recovery location.
+
+
+```{r table7, echo=FALSE}
+
+      tag  <- paste("select * from Report_Survey_Tag_Recoveries",sep="") # have to go in database and change the year value
+      #tag.rec <- GetSQLData(tag,"FishTag")
+      #write.table(tag.rec, file = paste(path,"table7.csv",sep=''),row.names=FALSE, na="",col.names=TRUE, sep=",")
+      tag.rec <-  read.csv(paste(path,'table7.csv',sep=''), header=T)
+      
+      tag.rec[is.na(tag.rec)] <- 0   # convert NA to zero in whole table
+      tag.rec$YearGroups      <- as.character(tag.rec$YearGroups)  # change column to character
+      tag.rec$YearGroups      <- gsub("Grp1.", "", tag.rec$YearGroups)
+      tag.rec$YearGroups      <- gsub("Grp2.", "", tag.rec$YearGroups)
+      tag.rec$YearGroups      <- gsub("Grp3.", "", tag.rec$YearGroups)  
+      tag.rec$YearGroups      <- gsub("Grp4.", "", tag.rec$YearGroups)      
+      tag.rec$Recoveries      <- as.numeric(rowSums(tag.rec[,2:8], na.rm=TRUE))
+      
+      ad.row <- c('Total Counts',sum(tag.rec$X.10.km), sum(tag.rec$X11.50.km), sum(tag.rec$X51.100.km),
+                                 sum(tag.rec$X101.250.km), sum(tag.rec$X251.500.km), sum(tag.rec$X501.1000.km),
+                                 sum(tag.rec$X.1000.km), sum(tag.rec$Recoveries) )
+      tag.rec2 <- rbind(tag.rec,ad.row) 
+
+      names(tag.rec2) <- c("Years at Liberty","<10","11-50","51-100","101-250","251-500","501-1000","1000+","Recovery count")
+   
+      kableExtra::kable(tag.rec2, row.names = FALSE,
+                        align = c("l","l","l","l","l","l","l","l","l"),
+                  booktabs = TRUE,   linesep = "",
+                  format = "latex",  caption = "(ref:table7Caption)") %>% 
+      add_header_above(c(" "= 1,
+                        "Distance (km) from Release Location" = 7, 
+                        " " = 1),bold=T) %>% 
+      
+       kableExtra::kable_styling(font_size = 9, position = "left", latex_options = "hold_position") %>%
+                row_spec(0, bold = T) %>%
+                row_spec(4, hline_after = T) %>%
+                column_spec(2, width  = "1.1cm") 
+
+```
+\clearpage
+

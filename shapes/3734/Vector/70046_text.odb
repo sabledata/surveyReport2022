@@ -1,0 +1,270 @@
+/3.0
+(ODB.1
+	FirstRootClassName:	"List"
+	Roots:	2
+	Version:	30
+)
+
+(List.2
+	Child:	3
+	Child:	15
+	Child:	26
+	Child:	37
+)
+
+(GText.3
+	Bounds:	4
+	Sym:	5
+	Text:	"RODERICK"
+	Spacing:	1.00000000000000
+)
+
+(RectD.4
+	Left:	-14265859.09457775600000
+	Top:	6887910.44557684850000
+	Right:	-14265466.50225896400000
+	Bottom:	6887826.55832924320000
+)
+
+(TxSym.5
+	Color:	6
+	Scale:	7
+	Font:	8
+	BgColor:	13
+	OlColor:	14
+	Size:	6039.88182756299830
+)
+
+(TClr.6
+)
+
+(Numb.7
+	N:	145.55438447898734
+)
+
+(NFont.8
+	Family:	9
+	Name:	10
+	Style:	11
+	CommonFamily:	12
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.9
+	S:	"Arial"
+)
+
+(AVStr.10
+	S:	"Arial"
+)
+
+(AVStr.11
+	S:	"Normal"
+)
+
+(AVStr.12
+	S:	"Helvetica"
+)
+
+(TClr.13
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.14
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.15
+	Bounds:	16
+	Sym:	17
+	Text:	"ISLAND"
+	Spacing:	1.00000000000000
+)
+
+(RectD.16
+	Left:	-14265813.17109467300000
+	Top:	6887805.77855173870000
+	Right:	-14265544.73540222300000
+	Bottom:	6887721.89239784800000
+)
+
+(TxSym.17
+	Color:	18
+	Scale:	7
+	Font:	19
+	BgColor:	24
+	OlColor:	25
+	Size:	6039.80308011914350
+)
+
+(TClr.18
+)
+
+(NFont.19
+	Family:	20
+	Name:	21
+	Style:	22
+	CommonFamily:	23
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.20
+	S:	"Arial"
+)
+
+(AVStr.21
+	S:	"Arial"
+)
+
+(AVStr.22
+	S:	"Normal"
+)
+
+(AVStr.23
+	S:	"Helvetica"
+)
+
+(TClr.24
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.25
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.26
+	Bounds:	27
+	Sym:	28
+	Text:	"SUSAN  ISLAND"
+	Spacing:	1.00000000000000
+)
+
+(RectD.27
+	Left:	-14267142.50136895300000
+	Top:	6887383.10542722700000
+	Right:	-14266576.29964134300000
+	Bottom:	6887299.22368980290000
+)
+
+(TxSym.28
+	Color:	29
+	Scale:	7
+	Font:	30
+	BgColor:	35
+	OlColor:	36
+	Size:	6039.48509451742120
+)
+
+(TClr.29
+)
+
+(NFont.30
+	Family:	31
+	Name:	32
+	Style:	33
+	CommonFamily:	34
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.31
+	S:	"Arial"
+)
+
+(AVStr.32
+	S:	"Arial"
+)
+
+(AVStr.33
+	S:	"Normal"
+)
+
+(AVStr.34
+	S:	"Helvetica"
+)
+
+(TClr.35
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.36
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(GText.37
+	Bounds:	38
+	Sym:	39
+	Text:	"JACKSON NARROWS"
+	Spacing:	1.00000000000000
+)
+
+(RectD.38
+	Left:	-14266851.04070032200000
+	Top:	6888471.15899814390000
+	Right:	-14265476.69089497400000
+	Bottom:	6888320.46274755710000
+)
+
+(TxSym.39
+	Color:	40
+	Scale:	7
+	Font:	41
+	BgColor:	46
+	OlColor:	47
+	Size:	10850.13004222061900
+)
+
+(TClr.40
+)
+
+(NFont.41
+	Family:	42
+	Name:	43
+	Style:	44
+	CommonFamily:	45
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.42
+	S:	"Arial"
+)
+
+(AVStr.43
+	S:	"Arial"
+)
+
+(AVStr.44
+	S:	"Normal"
+)
+
+(AVStr.45
+	S:	"Helvetica"
+)
+
+(TClr.46
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+
+(TClr.47
+	Red:	0xff
+	Green:	0xff
+	Blue:	0xff
+)
+

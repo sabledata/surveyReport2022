@@ -1,0 +1,91 @@
+
+
+                    Document Description for 70047.ntx
+
+ Date of creation of this listing     : 28-Nov-1995
+ Date of last change to the data file : 12-MAY-1995
+                     ENC Edition Date :  15-JUL-94
+
+ Title
+ SARAH ISLAND TO SWANSON BAY                                                    
+
+ Geographic Limits
+ SW  52-43-00.000N, 128-37-00.000W
+ SE  52-43-00.000N, 128-14-18.000W
+ NE  53-01-30.000N, 128-14-18.000W
+ NW  53-01-30.000N, 128-37-00.000W
+
+ Projection
+ Mercator
+
+ Scale
+ 1:35768
+
+ Scaling Latitude
+  52-53-00.000N
+ Horizontal Datum
+ NAD 83
+
+ Vertical Datum
+ CD  
+
+ Estimated horizontal accuracy of charted features
+ ±40 Metres
+
+ Originally digitized from Paper Chart
+ 3738
+
+ Category and Publication Date of Paper Chart
+ Reprint 3-JUL-1987
+
+ Last Notice to Mariners
+ Evaluated/Applied: 219-95
+
+ Depth Units
+ Fathoms and Feet
+
+ Magnetic Variation
+ Year   Declination   Annual Change
+ 1987.0    24°0'E        14.0'W
+
+ Features found in this file
+
+ Feature Code   Description                          Data Type     Layer Z value
+ ------------  ------------                          --------      ----- -------
+
+ CLIS           Small Island Outline/Symbol          Incr. Line    200       n/a
+                Petite île: symbole ou contour      
+                C.S.#/S.C.# 310,2                   
+                Not in Chart 1 / Exclu de la carte n
+                o 1                          
+
+ CLSL           Coastline/Shoreline                  Incr. Line    200       n/a
+                Côte bien déterminée                
+                C.S.#/S.C.# 310,1                   
+                Chart 1 / Carte no 1, Section C,1   
+
+ CODTFF         Contour: depth in fathoms            Incr. Line    200      20.0
+                Isobathes, Contour bathymétrique: pr
+                ofondeurs en brasses         
+                C.S.#/S.C.# 411,1                   
+                Chart 1 / Carte no 1, Section I,30  
+
+ COIK           Contour: approximate depth in metres Incr. Line    200      20.0
+                Isobathes, Contour bathymétrique: pr
+                ofondeurs approx. en mètres  
+                C.S.#/S.C.# 411,2                   
+                Chart 1 / Carte no 1, Section I,30  
+
+ GBNEATLINEIN   Inner Neatline                       Pt-Pt Line    200       n/a
+                Orle intérieure                     
+                Previously / Antérieurement NEAT    
+
+ NOTE           File Notes: text, comments           File Notes      0       n/a
+                Note de filière: textes, commentaire
+                s                            
+                Do not use for production / Ne pas u
+                tiliser pour production      
+   "                         "                       File Notes      0       n/a
+
+ POLABEL        Polygon Display Labels               Char. Text    200       n/a
+                Désignation de polygone             

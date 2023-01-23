@@ -1,0 +1,3 @@
+"x"
+"42S02 208 [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'dbo.GIS_Release_Recovery_Distance_vw'."
+"[RODBC] ERROR: Could not SQLExecDirect ' select TAG_ID, RELEASE_YR, RECOVERY_YR, RELEASE_TAG, RECOVERY_TAG,  PREVIOUS_TAG_NUMBER, RELEASE_EVENT, RECOVERY_EVENT, Release_Length,  Recovery_Length, REL_MAJOR, REL_LAT, REL_LON, REC_LAT,  REC_LON, REC_SEAM, REC_MAJOR, DISTANCE, RECOVERY_MONTH,  lineseg, SEAMOUNT_IND, RECAPTURE_FISH_ID, RECOVERY_STATE_DESC, event_set  from dbo.GIS_Release_Recovery_Distance_vw AS GIS_Release_Recovery_Distance_vw_2  where (RECOVERY_YR = 2021) and (RECOVERY_STATE_DESC='fresh')  order by event_set'"
