@@ -2,43 +2,45 @@
 
 ## SURVEY DESIGN
 
-Methodology for the `r yr` Sablefish research and assessment surveys employed a stratified random sampling (StRS) design and a traditional standardized inlet component.  The methods for these are described in Sections \@ref(strs)) and  \@ref(trad)), respectively.  In addition, a new design component was added to the survey in 2021 to support a multi-year investigation of the impacts of longline trap gear on the ocean floor. The methodology for this gear movement work is described in Section \@ref(gear)).
+The `r yr` Sablefish research and assessment survey design followed previous survey protocols using a stratified random sampling (StRS) component and a traditional standardized inlet component.  Additional survey sets were dedicated to a benthic contact video component.  The methods for these components are described in Sections \@ref(strs), \@ref(trad), and \@ref(gear) respectively. 
 
 ### STRATIFIED RANDOM SAMPLING SURVEY COMPONENT  {#strs}
 
-Since 2011, the StRS design has been conducted in all offshore survey areas. The StRS design began in 2003 with the purpose of distributing tag releases at random, collecting biological samples and developing a catch-rate based index of abundance [@Wyeth2003]. It also provided an alternative design to the historic traditional offshore component of the survey which occurred from 1990 to 2010 at fixed locations. 
+The StRS design was piloted in 2003 with the goal of releasing tagged fish at random, collecting biological data and developing an annual time-series of the catch rates [@Wyeth2003].  The StRS spatial boundaries were originally determined by outlining the areas of commercial trap fishing with the bathymetric terrain [@Wyeth2007].  This design provided an alternative to the historic traditional offshore component of the survey which occurred from 1990 to 2010 at fixed tagging and indexing localities. 
 
-Under the StRS design the offshore survey area is partitioned into five spatial strata (S~1~ to S~5~) and three depth strata (RD~1~ to RD~3~) for a total of 15 strata (Figure \@ref(fig:figure1)). The five spatial strata are S~1~ (South West Coast Vancouver Island or SWCVI), S~2~ (North West Coast Vancouver Island or NWCVI), S~3~ (Queen Charlotte Sound or QCS), S~4~ (South West Coast of Haida Gwaii or SWCHG), and S~5~ (North West Coast of Haida Gwaii or NWCHG).  The three targeted depth ranges are 100-250 fathoms (RD~1~), 250-450 fathoms (RD~2~), and 450-750 fathoms (RD~3~). The area within each of the 15 strata are sectioned into 2 km x  2 km grid cells or ‘fishing blocks’ from which set locations are randomly chosen. 
+Five spatial strata (S~1~ to S~5~) and three depth strata (RD~1~ to RD~3~) were used to define the survey area (Figure \@ref(fig:figure1)). The five spatial strata were identified as: S~1~ (South West Coast Vancouver Island or SWCVI), S~2~ (North West Coast Vancouver Island or NWCVI), S~3~ (Queen Charlotte Sound or QCS), S~4~ (South West Coast of Haida Gwaii or SWCHG), and S~5~ (North West Coast of Haida Gwaii or NWCHG).  The three targeted depth ranges have been established as: 100-250 fathoms (RD~1~), 250-450 fathoms (RD~2~), and 450-750 fathoms (RD~3~). The area within each of these 15 strata were sectioned into 2 km x  2 km grid cells or ‘fishing blocks’ from which set locations were randomly chosen. 
 
 From 2003 through 2005, five grid cells were randomly selected in each spatial-depth stratum for a total of 75 targeted survey blocks. From 2006 through 2010, the number was increased to six blocks per stratum. An analysis was completed for the 2011 survey to optimize the allocation of the blocks to strata for the 2011 and 2012 surveys. The sampling rate was increased to a target of 110 blocks. In order to lower survey costs, the number of blocks were reduced for the 2013 survey, from 110 to 91 offshore blocks while maintaining the same relative allocation of blocks to strata. This target number of blocks (91) has been in place on all subsequent surveys, including `r yr` (Table \@ref(tab:table1)).
 
 ### TRADITIONAL MAINLAND INLET SURVEY COMPONENT  {#trad}
 
-Under the traditional mainland inlet design, sets were allocated to five specific polygons in each of the following 4 areas: Portland Inlet, Gil Island, Finlayson Channel, and Dean/Burke Channel  (Figure \@ref(fig:figure1)). In 2022, only Finlayson Inlet was fished.  
+Under the traditional mainland inlet design, sets were allocated to five specific polygons in each of the following 4 areas: Portland Inlet, Gil Island, Finlayson Channel, and Dean/Burke Channel (Figure \@ref(fig:figure1)). In 2022, only Finlayson  Channel Inlet locality was fished.  
 
-### GEAR MOVEMENT RESEARCH  {#gear}
+### BENTHIC CONTACT VIDEO COMPONENT  {#gear}
 
-The objectives for the gear movement research in 2022 followed those of 2021:<br>
-1.	validate estimates of gear movement derived from a movement classification algorithm developed from 25-trap strings of Sablefish gear;
+Benthic contact video research occurred as a part of the StRS component from 2013 through 2017, and again in 2021 and 2022.  In 2021 and 2022, the benthic contact video study expanded to include sets with up to 15 strings of 60 traps, with 5 sets in each of the three depth strata.
+
+The objectives for the benthic contact video component were:<br>
+1.	validate estimates of gear movement derived from the algorithm developed from 25-trap strings of Sablefish gear;
 2.	estimate bottom-contact and gear movement from 60-trap strings in BC coastal fishing grounds, by collecting movement data near the ends and middle of the string.  
 
-Data to support the first research objective were collected via the deployment of trap cameras on selected sets from the StRS design component. The target number of 25-trap StRS sets with cameras was 25 in 2021. There were no specific requirements for which StRS sets the camera package should be deployed on; however, on days in which 60-trap experimental gear movement sets were done (described below), attempts were made to deploy in the same depth range as the experimental set. On days with no experimental sets, attempts were made to spread the sets over depth strata.
+Data to support the first research objective were collected via the deployment of trap cameras on selected sets from the StRS design component. The target number of 25-trap StRS sets with cameras was 5 within each spatial strata for a total of 25 (Table \@ref(tab:table2)).  There were no specific requirements for which StRS sets the camera package should be deployed on; however, on days in which 60-trap experimental gear movement sets were done (described below), attempts were made to deploy in the same depth range. On days with no experimental gear movement sets, attempts were made to spread the sets over depth strata.
 
-Data to support the second research objective was collected by deploying additional "experimental" sets with 60 traps on a string. The 60-trap gear movement sets were new in 2021; gear movement research in previous years had only involved the 25-trap strings used for the StRS survey, as described above. Sixty-trap experimental sets were added in 2021 to better represent commercial fishing practices, and to compare gear movement behavior with the 25-trap strings. The target for 2021 was to complete 5 sets in each of the three depth strata, for a total of 15 experimental 60-trap sets. Set locations were selected by the Fishing Master and were only planned for days that could accommodate the deployment and retrieval of traps without affecting StRS survey operations. Experimental sets were required to be set at least 1 nautical mile away from any survey blocks that had not yet been fished and were not used for abundance indexing purposes.
+Data to support the second research objective was collected by adding dedicated sets that simulate commercial fishing sets with 60 traps on a string.  Set locations were selected by the Fishing Master and were only planned for days that could accommodate the deployment and retrieval of traps without affecting StRS survey operations. Experimental sets were required to be set at least 1 nautical mile away from any survey blocks that had not yet been fished and were not used for abundance indexing purposes.
 
-No tagging or biological sampling were conducted on any species caught on the experimental gear movement sets, with the exception of Sablefish tag recoveries. If these were encountered, the fish were sampled, as opposed to being re-released.  
+No species caught on the experimental gear movement sets were sampled, with the exception of Sablefish tag recoveries. If these were encountered, they were retained for biological sampling.  
 
 ## GHNMCA AND HAIDA HERITAGE SITE
 
-Approval was granted for three years (2021 to 2023) to conduct research sets in the designated multi-use zones of the GHNMCA (Gwaii Haanas National Marine Conservation Area), as identified in the Gwaii Haanas Gina 'Waadluxan KilGuhlGa Land-Sea-People Management Plan [\underline{https://www.pc.gc.ca/en/pn-np/bc/gwaiihaanas/info}](https://www.pc.gc.ca/en/pn-np/bc/gwaiihaanas/info).
+The Archipelago Management Board (AMB) of the Gwaii Haanas National Marine Conservation Area Reserve (GHNMCA) granted approval for the Sablefish survey to operate in the multi-use protection zones of the reserve from 2021 through 2023.  The Gwaii Haanas Gina 'Waadluxan KilGuhlGa Land-Sea-People Management Plan is provided at  [\underline{https://parks.canada.ca/pn-np/bc/gwaiihaanas/info/consultations/gestion-management-2018}](https://parks.canada.ca/pn-np/bc/gwaiihaanas/info/consultations/gestion-management-2018).  Any survey blocks that landed in a strict protection zone during the selection process were replaced with alternate blocks.
 
 ## VESSEL
 
-The `r yr` survey of `r setcnt - 4` fishing sets and 4 gear movement sets were chartered aboard the F/V `r boat` (Figure \@ref(fig:figure2)), skippered by `r captain`  between `r dates`, `r yr` (Appendix \@ref(app:first-appendix)). Information about the vessel can be found at [\underline{http://marinetraffic.com}](http://marinetraffic.com). 
+The `r yr` survey of `r setcnt` fishing sets and 6 gear movement sets were chartered aboard the F/V `r boat` (Figure \@ref(fig:figure2)), skippered by `r captain`  between `r dates`, `r yr` (Appendix \@ref(app:first-appendix)). Information about the vessel can be found at [\underline{http://marinetraffic.com}](http://marinetraffic.com). 
 
 ## FISHING GEAR
 
-The longline trap gear for StRS and inlet sets consisted of a groundline resting on the ocean floor with 25 baited traps attached to beckets at 150 foot intervals along its length and 90 pound anchors at each end (Figure \@ref(fig:figure3)a). A flagpole was required for at least one end of the set to improve visibility for retrieval. The traps  were steel frame with a bottom hoop diameter of 54 inches and covered with an North American #84 black braided nylon web of 2.75 inch mesh (Figure \@ref(fig:figure3)b). 
+The longline trap gear for StRS and inlet sets consisted of a groundline resting on the ocean floor with 25 baited traps attached to beckets at 150 foot intervals along its length and 90 pound anchors at each end. A flagpole was required for at least one end of the set to improve visibility for retrieval. The traps  were steel frame with a bottom hoop diameter of 54 inches and covered with an North American #84 black braided nylon web of 2.75 inch mesh.  Figures of the gear are found in the 2021 survey report [@Lacko2023].
 
 The tunnels were made of green braided, knotless, 1.25 inch mesh. The traps did not include escape rings, however included a ‘rot panel’ of # 21 cotton located above the middle ring.  Standard bait bags (6 by 12 inches) made of 1/8 inch web with a nylon drawstring and #7 stainless trolling snaps were included with the traps.
 
@@ -46,24 +48,24 @@ The tunnels were made of green braided, knotless, 1.25 inch mesh. The traps did 
   
 During normal survey fishing operations gear was deployed on alternate days. Prior to deployment, the Fishing Master inspected the block to determine fishability and if it was within the targeted depth range.  The goal was to have as much gear as possible within the block boundaries.  If unfishable, an adjacent block was chosen as a replacement, either to the east or west of the original block, or failing that, to the north or south.  If none of those blocks met the criteria, an alternate block in the same area and depth stratum was randomly chosen.  
 
-Two science staff recorded information associated with the deployment of the gear. One science member was positioned in the wheelhouse and entered data in the GFBioField Bridge Log form within the Electronic Data Acquisition System (EDAS) [@Olsen2010].  The global positioning system (GPS) and bottom sounder data were logged continuously for the duration of the survey and designated fields on the bridge log were auto-populated. Details on electronic entry of the all EDAS GFBioField forms mentioned in this document are available in the GFBio Field User Guide 2020.
+Two science staff recorded information associated with the deployment of the gear. One science member was positioned in the wheelhouse and entered data in the Electronic Data Acquisition System (EDAS) GFBioField Bridge Log form [@Olsen2010].  The Bridge Log form consisted of nine separate pages (Header, Fishing, Spatial, Gear Specs, Depths, Environment, Comment, Usability, Finish) that recorded the many important details about the survey set.   National Marine Electronics Association (NMEA) formatted data from the global positioning system (GPS)  and depth sounder were collected by EDAS and reviewed in the "NMEA attributes plot series" available on the Bridge Log form.  Details on electronic entry of the EDAS GFBioField forms mentioned in this document are available in the GFBio Field User Guide 2022 (provided upon request).
 
-A set paper log was filled out on the deck by the science recorder who had maximum visibility of the crew setting the traps over the stern rail. The set log included the deployment time and identity of the first and last buoys, the times that the first and last traps were deployed, a tally of beckets and traps, as well as the information about the data recorders that were deployed (which trap they were in, and the unique identifying number of each data recorder).  The science recorder on the back deck also ensured that each trap deployed was correctly baited and not damaged. 
+A set paper log was filled out on the deck by the science recorder who had maximum visibility of the crew setting the traps over the stern rail. The set log included the deployment time and identity of the first and last buoys, the times that the first and last traps were deployed, a tally of beckets and traps, as well as the information about the data recorders that were deployed (which trap they were in, and the unique identifying number of each data recorder).  An set log example is found in the 2021 survey report [@Lacko2023].  The science recorder on the back deck also ensured that each trap deployed was correctly baited and not damaged. 
 
 ### Stratified Random Component (StRS)
 
-Sets in StRS blocks had a targeted soak time of 24 hours.  Fishing sets were designated useable if hauled between 22 and 26 hours. Traps were baited with 10 pounds of loose offshore Pacific Hake (*Merluccius productus*) and 2 pounds of bagged squid.
+Sets in StRS blocks had a targeted soak time of 24 hours +/- 2 hours.  Fishing sets were designated useable if hauled between 22 and 26 hours. Traps were baited with 10 pounds of loose offshore Pacific Hake (*Merluccius productus*) and 2 pounds of bagged squid.
 
 ### Traditional Standardized Inlet Component
 
-Fishing sets in inlet localities had a targeted soak time of 18 hours. These sets were designated useable if hauled between 16 and 20 hours, compatible with the historic inlet survey protocols.  Traps were baited with 2 pounds of bagged squid. 
+Fishing sets in inlet localities had a targeted soak time of 18 hours +/- 2 hours. These sets were designated useable if hauled between 16 and 20 hours, compatible with the historic inlet survey protocols.  Traps were baited with 2 pounds of bagged squid. 
 
 
-### Gear Movement Research
+### Benthic Contact Video Component
 
 #### 25 Trap Strings
 
-For the subset of StRS sets selected for gear movement research, cameras and associated equipment (Section \@ref(twenty-fivetraps)) were placed in an open, unbaited trap positioned in the middle of a 25 trap string of gear. Specifically, camera traps were positioned as trap 13 on the string, increasing the total number of traps to 26 so that there remained 25 traps fished as part of the StRS design. 
+For the subset of StRS sets selected for gear movement research, TRAPCAM and associated equipment (Section \@ref(twenty-fivetraps)) were placed in an open, unbaited trap positioned in the middle (trap 13) on a 25 trap string of gear. On these sets,the total number of traps is increased to 26 so that the remaining 25 traps were fished as part of the StRS design. 
 
 #### 60 Trap Strings
 
@@ -72,9 +74,10 @@ These sets were intended to replicate commercial fishing practices, and as such,
 
 ## CATCH PROCESSING
 
-The skipper modified haulback speed as needed, to allow the science crew to accurately record catch as each trap came on board. Two science staff were positioned on deck at the haul card station; one recorded the catch and the other managed the movement of baskets. In addition, the catch recorder entered set details into the EDAS GFBioField Bridge Log.  These included the haul start and end times, the buoy numbers, the buoy retrieval times, the first and last trap retrieval times, and the trap number which contained the data recorder. 
+The skipper modified haulback speed as needed, to allow the science crew to accurately record catch as each trap came on board. Two science staff were positioned on deck at the haul card station; one recorded the catch and the other managed the movement of baskets. 
+First, the catch recorder entered set details into the EDAS GFBioField Bridge Log.  These included the haul start and end times, the buoy numbers, the buoy retrieval times, the first and last trap retrieval times, and the trap number which contained the data recorder. 
 
-As the groundline was hauled, each becket and trap was entered in the EDAS GFBioField Trap Catch form. Crew members alerted the recorder about any damage to a trap (i.e. holes) which was then recorded in the EDAS GFBioField Trap Usability form.
+As the groundline was hauled, each becket and trap was entered in the EDAS GFBioField Trap Catch form which is accessed via the EDAS GFBioField Haul Card form. Crew members alerted the recorder about any damage to a trap (i.e. holes) which was then recorded in the EDAS GFBioField Trap Usability form.
 
 The crew sorted catch by species from every trap, and counted the catch into baskets.  Catch counts for each basket of fish were recorded, and weighed to the nearest 0.2 kg on a motion compensating scale. Each basket was given a basket use code of D, A, T, SD or F.  Code D designated fish species as discards or commercial catch; code A allocated fish to age samples; code T allocated Sablefish to be tagged and released; code SD identified sublegal Sablefish discards; code F represented fish frames with amphipod or hagfish damage.  
 
@@ -82,7 +85,7 @@ If catch from a trap was not designated for tagging (T) or for sampling (A), the
 
 ### Sablefish Allocation Details
  
-Prior to 2018, Sablefish were tagged from 1/3 of the traps on StRS sets and 1/2 of the traps on the inlet sets (basket code T). Due to high catch numbers, the survey protocol was revised in 2018 to designate up to 125 Sablefish to be tagged from 1/3 of the traps on all sets.  This convention was continued in 2021.  When catches were high, traps targeted for tagging were spread throughout the string to avoid tagging the first 125 fish.  
+Prior to 2018, Sablefish were tagged from 1/3 of the traps on StRS sets and 1/2 of the traps on the inlet sets (basket code T). Due to high catch numbers, the survey protocol was revised in 2018 to designate up to 125 Sablefish to be tagged from 1/3 of the traps on all sets.  The established protocol was continued in 2021.  When catches were high, traps targeted for tagging were spread throughout the string to avoid tagging the first 125 fish.  
 
 A biological sample was collected from the coded "A" traps with the goal of selecting 50 to 60 fish.  If CPUE was high, the new survey protocol of 2018 designated a minimum of two traps to be used for samples.  If the 2 traps contained more than 60 Sablefish total, then 50-60 specimens were randomly selected from the sample. If catch rates were low, a sufficient number of traps not designated for tagging (T), were coded as 'A' traps, to ensure that the biosample contained 50-60 pieces.
 
@@ -91,7 +94,7 @@ The remaining traps were allocated to the discard category and sorted by size in
 
 ## BIOLOGICAL SAMPLING (LWSMO)
 
-Biological samples were collected from Sablefish and incidentally captured species such as rockfishes and Lingcod on the EDAS GFBioField Fish Recording form. Measurements were electronically recorded for fork length (L), body weight (W), sex (S) and maturity level (M). Sagittal otoliths (O) were collected and stored for potential ageing by the sclerochronology laboratory located at the Pacific Biological Station in Nanaimo, BC.  In 2021, Shortraker Rockfish, Yelloweye Rockfish, and Rougheye/Blackspotted Rockfish were sampled for LWSMO (~ 25 pieces/set). Tissue samples (fin clips in vials containing 95% ethanol) for DNA extraction were collected from Yelloweye Rockfish and Rougheye/Blackspotted Rockfish.
+Biological samples were collected from Sablefish and incidentally captured species of Shortraker Rockfish, Yelloweye Rockfish, and Rougheye/Blackspotted Rockfish on the EDAS GFBioField Fish Recording form. Measurements were electronically recorded for fork length (L), body weight (W), sex (S) and maturity level (M). Sagittal otoliths (O) were collected and stored for potential ageing by the sclerochronology laboratory located at the Pacific Biological Station in Nanaimo, BC.  In 2022, Shortraker Rockfish, Yelloweye Rockfish, and Rougheye/Blackspotted Rockfish were sampled for LWSMO (~ 25 pieces/set). Tissue samples (fin clips in vials containing 95% ethanol) for DNA extraction were collected from Yelloweye Rockfish and Rougheye/Blackspotted Rockfish.
 
 On Groundfish surveys, fin clips are routinely collected from the Rougheye/Blackspotted Rockfish complex for later species confirmation using genetic methods. Since this complex of two distinct species [@Orr2008] have similar appearances with slight variations in colour markings and dorsal fin lengths, the sampler visually identifed each specimen as either a Rougheye, a Blackspotted or a hybrid species.  All rockfish and legal-sized Sablefish (fork length > 55 cm) that were sacrificed for biological samples were dressed, frozen, and landed as commercial catch.
 
@@ -99,27 +102,25 @@ Biological sampling of Lingcod (*Ophiodon elongatus*) was a special sample reque
 
 Length (L) and weight (W) measurements were collected from all Pacific Halibut (*Hippoglossus stenolepis*) before they were released at sea. Only the length (L) was recorded for Pacific Sleeper Sharks (*Somniosus pacificus*) before release. 
 
- 
-
 ## SABLEFISH TAGGING
 
 Fish destined to be tagged were transferred from the sorting area to a tagging tank.  A vessel crew member was positioned to retrieve Sablefish from the tank and provide assistance with fish handling.  A scientist stood at the sample station and tagged fish with a Mark II Long Tagging gun loaded with Floy FD-94 T-bar anchor tags.  The tag was inserted on the left side of the fish, 1 cm below and 2-3 cm behind the anterior insertion of the first dorsal fin.  Fork length (mm to the nearest ½ cm) measurements taken on the Scantrol measuring board were electronically transferred to the EDAS GFBioField Fish Recording form [@Olsen2010]. Before release, any sampling errors, injuries or damage to the fish were documented on the Fish Recording form by a second scientist who was stationed at the sample computer. Tag checks were performed systematically to ensure tag numbers on the data form matched those on the fish specimen. 
 
-Water temperature in the tagging tank was measured at 1 minute intervals by a Sea-Bird 39 temperature and pressure logger (SBE 39), which was installed in the tank during the haul. 
+Water temperature in the tagging tank was measured at 1 minute intervals by a standard oceanographic temperature-depth recorder (TDR), which was installed in the tank during the haul. 
 
 ## SABLEFISH TAG RECOVERY
 
-Any previously tagged fish brought aboard were treated in one of two ways.  First, Sablefish with Canadian tags were re-released with a new tag and the previous tag was removed. In addition, any wounds from the old tag were recorded.  Second, Sablefish with a foreign agency tag or Sablefish that had sustained numerous injuries were retained for biological sampling.  For these specimens, the tag and otoliths were stored in a bar-coded vial that was later scanned into the EDAS GFBioField Tag Recovery Entry form by DFO staff [@Olsen2010]. DFO returned foreign tags to their country of origin through the Canadian Sablefish Association tag rewards program. 
+Any previously tagged fish brought aboard were treated in one of two ways.  First, Sablefish with Canadian tags were re-released with a new tag and the previous tag was removed. In addition, any wounds from the old tag were recorded.  Second, Sablefish with a foreign agency tag or Sablefish that had sustained numerous injuries were retained for biological sampling.  For these specimens, the tag and otoliths were stored in a bar-coded vial that was later scanned into the EDAS GFBioField Tag Recovery Entry form by DFO staff [@Olsen2010]. The department later returned any foreign tags to their country of origin through the Canadian Sablefish Association tag rewards program. 
 
 
 ```{r SensorText, echo=FALSE}
-   # -- determine the sets that deployed SBE and HOBO and CTD and cameras
+   # -- determine the sets that deployed TDR and tri-axial accelerometer (AXL) and CTD and cameras
    # -- sql view shows each sensor and which traps they were on 
    #-- bottom sensors:   sensor[sensor$SBE39==1 & sensor$set_no %in% c(7,14,63,27),]
    sense  <-  paste(" SELECT dbo.SURVEY_trips_vw.YEAR, FE.TRIP_ID, FE.FE_MAJOR_LEVEL_ID AS set_no, ",
                     " FE.FE_MINOR_LEVEL_ID AS becket_no, ",
-                    " CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%sbe39%' THEN 1 ELSE 0 END AS SBE39, ",
-                    " CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%accelerometer%' THEN 1 ELSE 0 END AS HOBO, ",
+                    " CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%sbe39%' THEN 1 ELSE 0 END AS TDR, ",
+                    " CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%accelerometer%' THEN 1 ELSE 0 END AS AXL, ",
                     " CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%ctd%' THEN 1 ELSE 0 END AS CTD, ",
                     " CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%camera%' THEN 1 ELSE 0 END AS CAM, ",
                     " CASE WHEN FE_EVENT_SENSOR_DESC LIKE '%oxygen%' THEN 1 ELSE 0 END AS DO ",
@@ -141,21 +142,25 @@ Any previously tagged fish brought aboard were treated in one of two ways.  Firs
 
 ###  25 TRAP STRINGS  {#twenty-fivetraps}
 
-For StRS sets used for gear movement research, an open unbaited "camera" trap was added to the middle of a string of gear, for a total of 26 traps. A Nuytco autonomous deep-water camera system, a Sea-Bird temperature and pressure logger (SBE 39) and an Actigraph xGT3X-BT accelerometer (AXL) were attached inside the trap. 
+For StRS sets used for gear movement research, an open, unbaited trap with a deep-water autonomous camera (TRAPCAM) was added to the middle of a string of gear, for a total of 26 traps. A deep-water autonomous camera (TRAPCAM), a standard oceanographic temperature-depth recorder (TDR) and an Actigraph xGT3X-BT accelerometer (AXL) were attached inside the trap. 
 
-The Nuytco Camera system consisted of a pressure housing with high intensity LEDs for lighting and a GoPro camera for collecting image data. Both were controlled by a microcontroller that also had an onboard accelerometer and depth recorder.  The camera unit was programmed to record when triggered by movement or by depth value.  The unit was placed in a bracket and mounted inside the top of the trap, with the camera facing out of the tunnel. After the data was uploaded, video footage was synced with accelerometer measurements using software developed for this purpose.
+The TRAPCAM system consisted of a pressure housing with high intensity LEDs for lighting and a GoPro camera for collecting image data. Both were controlled by a microcontroller that also had an onboard accelerometer and depth recorder.  The camera unit was programmed to record when triggered by movement or by depth value.  The unit was placed in a bracket and mounted inside the top of the trap, with the camera facing out of the tunnel. After the data was uploaded, video footage was synced with the accelerometer measurements using software developed for this purpose.
 
-The SBE39s were housed in a PVC housing which was clipped to the inside of the trap with carabiners.  They were programmed to record temperature and pressure at either 3 second intervals when deployed with a camera or accelerometer, and at 60 second intervals if deployed alone.  
+The TDRs were housed in a PVC housing which was clipped to the inside of the trap with carabiners.  They were programmed to record temperature and depth (pressure) at either 3 second intervals when deployed with a camera or accelerometer, and at 60 second intervals if deployed alone.  
 
 Accelerometers were programmed to record movement at 100 Hz, were secured in a pressure housing, which was installed in a bracket.  The bracket was then bolted to the top of the trap frame. An accelerometer was also attached to the rail next to the trap hauler to provide information about the movement of the vessel during hauling. 
 
-A target number of sets were allocated for the camera trap deployments in each of the fifteen StRS area-depth strata (Table \@ref(tab:table2)). Data from the CTD sensors, SBE temperature and pressure loggers were processed after the set was complete using tools on the GFBioField Upload Sensor Data form to prepare it for upload to the Groundfish database (GFBio).  
+A target number of sets were allocated for the camera trap deployments in each of the fifteen StRS area-depth strata (Table \@ref(tab:table2)). Data from the TDRloggers were processed after the set was complete using tools on the GFBioField Upload Sensor Data form to prepare it for upload to the Groundfish database (GFBio).  
 
 ###  60 TRAP STRINGS
 
-In order to evaluate gear bottom-contact and movement from a typical commercial fishing set, 60 traps were set with electronic gear at the middle and ends of the string on fishing sets (Table \@ref(tab:table3)).  A Nuytco autonomous deep-water camera, SBE 39 and AXL were attached to trap number 5, 35, and 55.  As with the 25 trap strings, an accelerometer was attached to the rail next to the trap hauler to provide information about vessel movement during hauling. 
+In order to measure trap gear movement and seabed contact that is characteristic of those deployed in the commercial fishery in coastal BC., 60 traps were set with electronic gear in up to three of the traps.  The traps with electronic gear were closed with a full cape and tunnel and contained no bait.  The electronic gear consisted of: 
+i)  A deep-water autonomous camera (TRAPCAM) that produces motion-activated and fixed-interval high definition video;
+ii) A standard oceanographic temperature-depth recorder (TDR) that measures in-situ depth and temperature data;
+iii) A tri-axial accelerometer (AXL) that measures quasi-continuous 3-axis motion and orientation of a trap.
+
+As with the 25 trap strings, an AXL was attached to the rail next to the trap hauler to provide information about vessel movement during hauling. 
 
 ## ELECTRONIC MONITORING (EM) VIDEO DATA COLLECTION  
 
-During haulback, the electronic monitoring (EM) system cameras were activated by the hydraulic sensor.  Three standard analog cameras were positioned at optimal viewing angles to record survey activities.  Two cameras were stationed along the mast to record the catch as it was processed at the hopper. A third camera was stationed on the side of the wheelhouse to record the traps as they were brought over the rail. The video data from each set was reviewed by science staff the following day to provide quality control on catch data.
-
+The survey vessel’s electronic monitoring (EM) system provided by Archipelago Marine Research, Inc. (AMR), records video and logs vessel sensor data during the survey trip.  The video data from activities at the rail, the hopper, and the scale were reviewed by a pair of science staff directly from the AMR hard drive the following day.  One science member would watch the video and call out each trap, the species found in the baskets and where each basket was allocated (Aging, Tagging, or Discard).  A second science member would check off the corresponding trap and basket records in the GFBioField Trap Catch datasheet.

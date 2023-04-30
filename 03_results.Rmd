@@ -7,9 +7,9 @@
 # taken from field db notes
 
 ```
-The 2022 survey was  days long, starting in Nanaimo, BC on October , with crew changes on October at Port Hardy and November nd at Skidegate Narrows. There were  weather days .  In total, 91 sets were completed (Appendix \@ref(app:third-appendix)): 86 StRS sets at random sites, six 60-trap experimental sets for gear movement research (Figure \@ref(fig:figure4)) and five standardized sets at Finlayson inlet locality (Figure \@ref(fig:figure5)). 
+The 2022 survey was 47 days long, starting in Nanaimo, BC on October 4, with crew changes on October 20 at Port Hardy and November 3 at Skidegate Narrows. The survey was completed on November 19 with a loss of 9 weather days.  In total, 97 sets were completed (Appendix \@ref(app:second-appendix)): 86 StRS sets at random sites (Figure \@ref(fig:figure3)), six 60-trap experimental sets for gear movement research (Figure \@ref(fig:figure3)) and five standardized sets at Finlayson inlet locality (Figure \@ref(fig:figure4)). 
 
-Of the 91 original blocks for the StRS portion of the survey, 5 blocks were deemed unfishable during the weather and timing (Figure \@ref(fig:figure6)). 
+Of the 91 original blocks for the StRS portion of the survey, 5 blocks were deemed unfishable due to the weather and timing (Figure \@ref(fig:figure5)). 
 
 ```{r CatchRateText, echo=FALSE}
   # -- generate the lowest uncertainity and corresponding year for catch rate paragraph
@@ -78,20 +78,22 @@ Of the 91 original blocks for the StRS portion of the survey, 5 blocks were deem
 ```
 ## CATCH PER UNIT EFFORT (CPUE) 
 
-Catch per unit effort (CPUE) statistics for 2022 are presented in relation to the available time series for each of the survey components used to index abundance:  (i) StRS (2003-2022) and (ii) traditional mainland inlet indexing sites (1991-2019). 
+Catch per unit effort (CPUE) statistics for `r yr` are presented in relation to the available time series for each of the survey components used to index abundance:  (i) StRS (2003-`r yr`) and (ii) traditional mainland inlet indexing sites (1991-`r yr`). 
 
 ### Stratified Random Set CPUE 
 
-Catch rates (catch per unit effort; CPUE) as indexed by kilograms of Sablefish per trap (Figure \@ref(fig:figure7)) and numbers of fish per trap (Figure \@ref(fig:figure8)) were generally higher in the middle depth strata over the survey time series (2003-2021).   In 2020 and 2021, the kg/trap and #fish/trap in the middle depth strata (RD~2~) were lower than the peak reached in 2019 in all areas with the exception of the South West Vancouver Island (S~1~).
+Catch rates (catch per unit effort; CPUE) as indexed by kilograms of Sablefish per trap (Figure \@ref(fig:figure6)) and numbers of fish per trap (Figure \@ref(fig:figure7)) were generally higher in the middle depth strata over the survey time series (2003-`r yr`). 
+In `r yr`, the kg/trap and #fish/trap in the middle depth strata (RD~2~) were lower than the peak reached in 2019 in areas S~2~, S~3~, S~4~ and S~5~.  In area S~1~ (South West Coast Vancouver Island), the `r yr` kg/trap and #fish/trap in the middle depth strata (RD~2~) were lower than the peaks reached in 2020 and 2021.
 
-The mean weight of captured Sablefish in 2021 was similar or slightly lower compared to 2020 in areas S~2~, S~3~ and S~4~, and slightly higher in the areas S~1~ and S~5~ (Figure \@ref(fig:figure9)).   The stratified mean survey abundance in 2021 was 36 kg/trap, which is up 3% from 2020 and down -6% from the 2019-2020 average (Figure \@ref(fig:figure10)).
+The mean weight of captured Sablefish in `r yr` was similar or slightly higher compared to `r yr-1` in the deep (RD~3~) and middle depth (RD~2~) waters of areas S~2~, S~3~, S~4~ and S~5~.   In the shallow (RD~1~) waters, the mean weight in `r yr` was slightly higher in areas S~2~ and S~4~ (Figure \@ref(fig:figure8)).   
+
+The stratified mean survey abundance in 2022 is up 10% from 2021; the second highest index since 2003. (Figure \@ref(fig:figure9)).
 
 ### Mainland Inlet CPUE
 
-CPUE in the mainlaind inlets has varied over time with peak CPUE occurring every 5-8 years (Figure \@ref(fig:figure11) a,b). In the early part of the time series (mid-1990s) average CPUE remained relatively constant before a peak in CPUE was observed in 1999, followed by declines to consistent levels until another peak in 2003 and 2004, and again in 2011. In 2018, CPUE returned (~23 fish, and ~40 kg per trap) to the levels observed during previous peaks. In 2019, the highest catch rates of the 26 year time series were observed (~36 fish, and ~61 kg per trap). Notably, the 2018-2019 mean weight (~1.7 kg) declined to an all time low due to large number of small fish becoming available to the survey (Figure \@ref(fig:figure11) c).  
+CPUE in the mainlaind inlets from has varied over time (1995-2022) with peak CPUE occurring every 5-8 years (Figure \@ref(fig:figure10)). At Dean/Burke Channel, Gil Island and Portland Inlet, the average CPUE peaks were observed in 1999, 2004 (2003 at Portland Inlet), 2011 and 2019.  At Finlayson Channel, the average CPUE peaks were observed in 1999, 2005, 2012 and 2019. 
 
-No inlets were surveyed in 2020.  Dean/Burke Channel was the only mainland inlet locality surveyed in 2021. Finlayson Inlet was the only mainland inlet locality surveed in 2022.  It is not included in the CPUE figures because no data was collected in the three other inlets.
-
+The highest catch rates of the 26 year time series observed at Dean/Burke Channel, Finlayson Channel, Gil Island, Portland Inlet occurred in 2019 with 42 kg/per trap, 51 kg/per trap, 74 kg/per trap and 75 kg/per trap respectively. No inlets were surveyed in 2020.  Dean/Burke Channel was the only mainland inlet locality surveyed in 2021. Finlayson Inlet was the only mainland inlet locality surveyed in 2022.  
 
 ```{r SpeciesCompositionText, echo=FALSE}
 
@@ -144,11 +146,11 @@ No inlets were surveyed in 2020.  Dean/Burke Channel was the only mainland inlet
    topInletsp1  <- stringr::str_to_title(as.character(topInletsp[1,1]))    # -- inlet top 2 species names
    # str_to_title() Function in R Language is used to convert the first letter of every word of a string to Uppercase 
    # the rest of the letters are converted to lower case. uses stringr()
-   #topInletsp1  <- gsub("Complex","complex", topInletsp1)          # -- small letter on complex if it occurs 
+   topInletsp1  <- gsub("Complex","complex", topInletsp1)          # -- small letter on complex if it occurs 
    topInletsc1  <- firstup(tolower(as.character(topInletsp[1,2])))  # -- inlet top 2 species science names
 
    topInletsp2  <- stringr::str_to_title(topInletsp[2,1])  
-   #topInletsp2  <- tolower(as.character(topInletsp2))
+   topInletsp2  <- tolower(as.character(topInletsp2))
    topInletsc2  <- firstup(tolower(as.character(topInletsp[2,2])))  
 
  
@@ -180,7 +182,7 @@ No inlets were surveyed in 2020.  Dean/Burke Channel was the only mainland inlet
    invertS      <- strsSpCom[1,4]
    mammalS      <- strsSpCom[1,5]
    birdS        <- strsSpCom[1,6]
-   #totalS      <- firstup(as.character(strsSpCom[1,7])) # taxonomic unit count for StRS with capital
+   totalS      <- firstup(as.character(strsSpCom[1,7])) # taxonomic unit count for StRS with capital
    totalS       <- as.character(strsSpCom[1,7]) # taxonomic unit count for StRS
 
    # -- species composition counts inlet sets
@@ -326,10 +328,10 @@ A total of `r totalI` taxonomic groups were represented in the catches from trad
                                  biosumm[7:9,],   biosumm[18,], biosumm[10:12,],biosumm[19,], 
                                  biosumm[13:15,], biosumm[20,])   # r bind the average column results
      
-     colnames(newdata) <-  c("Spatial","Depth","Males","Females","Males","Females","Tagged")
-     write.table(newdata, file = paste(path,"table6a.csv",sep=''),row.names=FALSE, na="",col.names=TRUE, sep=",")
-     newdata$Spatial   <-  cleanf(newdata$Spatial)
-     write.table(newdata, file = paste(path,"table6.csv",sep=''),row.names=FALSE, na="",col.names=TRUE, sep=",")
+     #colnames(newdata) <-  c("Spatial","Depth","Males","Females","Males","Females","Tagged")
+     #write.table(newdata, file = paste(path,"table6a.csv",sep=''),row.names=FALSE, na="",col.names=TRUE, sep=",")
+     #newdata$Spatial   <-  cleanf(newdata$Spatial)
+     #write.table(newdata, file = paste(path,"table6.csv",sep=''),row.names=FALSE, na="",col.names=TRUE, sep=",")
      a <-"the spatial strata S~1~, S~2~, S~3~, S~4~ and S~5~"
      
      pdiffS1 <- biosumm[16,3] - biosumm[16,4]    # --  S1 check male - female prop
@@ -437,7 +439,7 @@ A total of `r totalI` taxonomic groups were represented in the catches from trad
                           " order by event_set", sep="")
      #tag.samples    <-   GetSQLData(tagSample,"Sablefish")
      #write.table(tag.samples, file = paste(path,"results07b.csv",sep=''),row.names=FALSE, na="",col.names=TRUE,  sep=",")      
-     #tag.samples    <-   read.csv(paste(path,'results07b.csv',sep=''),header=T)                    
+     tag.samples    <-   read.csv(paste(path,'results07b.csv',sep=''),header=T)                    
     
 
 ```
@@ -487,15 +489,17 @@ The four dedicated 60-trap gear movement sets that deployed cameras captured `r 
 
 Overall, the StRS sets had a higher proportion of females than males over `r stratafemale`.  More females than males were caught in the shallow depth stratum (RD~1~) within `r shallsfemale`.  In the mid depth stratum (RD~2~), there were more males than females in `r midsmale`.  The deepest depth stratum (RD~3~) saw more females in spatial strata `r deepsfemale` (Table \@ref(tab:table6)).  
 
-Differences in length distributions between female and male Sablefish are exhibited in the data collected from the StRS portion of the 2003 - `r yr` surveys. Over these `r yr-2003 +1` years, the mean fork length ($\bar{x}$)  was `r mLf` cm for females and `r mLm` cm for males (Figure \@ref(fig:figure12)).
+## SABLEFISH FORK LENGTH
 
-In `r yr`, the average mean fork length for the `r format(length(firstyrfem$sex), big.mark=",")` females was `r as.character(round(mean(firstyrfem$length),1))` cm  and the average mean fork length for the `r format(length(firstyrmal$sex), big.mark=",")` males was `r as.character(round(mean(firstyrmal$length),1))` cm.  The average length of males reached their lowest mean size since 2003 (Figure \@ref(fig:figure13)). 
+Differences in length distributions between female and male Sablefish are exhibited in the data collected from the StRS portion of the 2003 - `r yr` surveys. Over these `r yr-2003 +1` years, the mean fork length ($\bar{x}$)  was `r mLf` cm for females and `r mLm` cm for males (Figure \@ref(fig:figure11)).
 
-On average, female Sablefish grow faster and reach a far greater size (Figure \@ref(fig:figure14) a) compared to males (Figure \@ref(fig:figure14) b).
+In `r yr`, the average mean fork length for the `r format(length(firstyrfem$sex), big.mark=",")` females was `r as.character(round(mean(firstyrfem$length),1))` cm  and the average mean fork length for the `r format(length(firstyrmal$sex), big.mark=",")` males was `r as.character(round(mean(firstyrmal$length),1))` cm.  The average length of males reached their lowest mean size since 2003 (Figure \@ref(fig:figure12)). 
 
-Sablefish maturity stages are macroscopically identified ...(Figure \@ref(fig:figure15)).
+On average, female Sablefish grow faster and reach a far greater size (Figure \@ref(fig:figure13) a) compared to males (Figure \@ref(fig:figure13) b).
 
+## SABLEFISH MATURITY
 
+Sablefish maturity stages are macroscopically identified ...(Figure \@ref(fig:figure14)).
 
 ## SABLEFISH SUB-LEGAL ENCOUNTERS
 
@@ -650,9 +654,9 @@ SBE 39 recorders have been deployed on survey fishing sets since 2006. In the sh
                                                                                                         
 ## ACKNOWLEDGEMENTS
 
-The stock assessment survey and data report is the result of the collaborative efforts of many individuals.  The Canadian Sablefish Association has provided coordination and support of the annual Sablefish survey since 1994.  The scientific staff that conducted the `r yr` Sablefish research charter included `r credits[2,4]` of Archipelago Marine Research Ltd (AMR); `r credits[3,4]` of Fisheries and Oceans, Canada.  
+We are grateful for the review of this document provided by xx and xx.  The stock assessment survey and data report is the result of the collaborative efforts of many individuals.  The Canadian Sablefish Association has provided coordination and support of the annual Sablefish survey since 1994.  The scientific staff that conducted the `r yr` Sablefish research charter included `r credits[2,4]` of Archipelago Marine Research Ltd (AMR); `r credits[3,4]` of Fisheries and Oceans, Canada.  
 
-A special thanks to the Vessel Master and crew of the F/V `r boat`, whose efforts made the survey successful and safe during the COVID-19 pandemic.  In `r yr`, the crew consisted of `r credits[1,4]`.
+A special thanks to the Vessel Master and crew of the F/V `r boat`, whose hard work made the survey successful.  In `r yr`, the crew consisted of `r credits[1,4]`.
 
 \clearpage
 

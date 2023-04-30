@@ -11,10 +11,10 @@ After that, all subsequent sections will be turned into appendices. -->
 
 ```{r appendixA, results="asis"}
 
-   dtBW   <- paste('exec dbo.procRKnitr_SurveyTrips ', yr ,sep='')
+   dtBW   <- paste('exec dbo.procRKnitr_SurveyTrips ', yr ,sep='')  # sql server sablefish db
    #trip   <- GetSQLData(dtBW,"Sablefish")
    #write.table(trip, file = paste(path,'appendixA.csv',sep=''),row.names=FALSE, na="",col.names=TRUE,  sep=",")  
-   trip   <-  read.csv(paste(path,'appendixA.csv',sep=''),header=T)
+   trip   <-  read.csv(paste(path,'appendixA.csv',sep=''),header=T)  # list of all survey trips
    
    colnames(trip) <- c("Year", "Dates",  "Vessel", "Captain", "Set Count", "GFBIO Trip id")
    kableExtra::kable(trip,
@@ -38,41 +38,43 @@ Details of sets completed during the `r yr` survey program (F/V `r boat`).  Sets
     library(ggplot2)
   
     setcnt     <-   110
-    options(knitr.kable.NA = '')  # get rid of NAs
+    options(knitr.kable.NA = '')  # remove NAs
+    #  survey set details include table created from 
+    #  exec Sablefish.dbo.Build_Seabird_tables named Report_SBE_HOBO_IND 
+    #  must alter exec Sablefish.dbo.Build_Seabird_tables and run after survey
     srvyset    <-  paste('dbo.procRReport_Survey_SetDetails ', yr,',1,',setcnt, sep='')
-    # survey set details include the table from    exec dbo.Build_Seabird_tables
-    # named Report_SBE_HOBO_IND 
     #srvy.set   <-  GetSQLData(srvyset,"Sablefish")
-    #write.table(srvy.set, file = paste(path,'appendixB.csv',sep=''),row.names=FALSE, na="",col.names=TRUE,  sep=",")  
+    #write.table(srvy.set, file = paste(path,'appendixB.csv',sep=''),row.names=FALSE, 
+    #na="",col.names=TRUE,  sep=",")  
     srvy.set   <-  read.csv(paste(path,'appendixB.csv',sep=''),header=T)
     
     # no ctd in 2022
     srvy.set  <-   srvy.set[,c(-23)]  
     latcnt  <-  length(srvy.set[, 9])  # add degree symbol in lat and long values
                for (i in 1:latcnt)
-                      { srvy.set[i,9]= paste(srvy.set[i,9],'° ', srvy.set[i,10],"'N",sep="")  }
+                   { srvy.set[i,9]= paste(srvy.set[i,9],'° ', srvy.set[i,10],"'N",sep="")  }
     latcnt  <-  length(srvy.set[,11])
                for (i in 1:latcnt)
-                      { srvy.set[i,11]=paste(srvy.set[i,11],'° ', srvy.set[i,12],"'W",sep="") }
+                    { srvy.set[i,11]=paste(srvy.set[i,11],'° ', srvy.set[i,12],"'W",sep="") }
     latcnt  <-  length(srvy.set[,13])
                for (i in 1:latcnt)
-                      { srvy.set[i,13]=paste(srvy.set[i,13],'° ', srvy.set[i,14],"'N",sep="") }
+                    { srvy.set[i,13]=paste(srvy.set[i,13],'° ', srvy.set[i,14],"'N",sep="") }
     latcnt<-length(srvy.set[,15])
                for (i in 1:latcnt)
-                      { srvy.set[i,15]=paste(srvy.set[i,15],'° ', srvy.set[i,16],"'W",sep="") }
+                    { srvy.set[i,15]=paste(srvy.set[i,15],'° ', srvy.set[i,16],"'W",sep="") }
    
-    # srvy.set  <-  srvy.set[,c(-22,-23,-24)]  # no hobo, ctd or camera columns needed 2021
+    # srvy.set  <-  srvy.set[,c(-22,-23,-24)]  # no hobo, ctd columns needed 2022
     # head(srvy.set)
     srvy.set  <-  srvy.set[,c(-10,-12,-14,-16)]  
    
    
     colnames(srvy.set) <- c( "Set", "Spatial Stratum","Type",      
-                             "Depth Stratum",   "Date", "Time", 
+                             "Depth Stratum", "Date", "Time", 
                              "Duration (minutes)",  "Area", 
                              "Start Latitude",  "Start Longitude", 
                              "End Latitude",    "End Longitude", 
                              "Start Depth (m)", "End Depth (m)", "Mean Depth (m)", 
-                             "Traps Fished",    "SBE 39", "AXL", "CAM")
+                             "Traps Fished",    "TDR", "AXL", "CAM")
    
     srvy.set$Type <- as.character(srvy.set$Type)
     #-- unique to 2022 sets 5,11,18,21,30,64 are Movement sets
@@ -87,59 +89,60 @@ Details of sets completed during the `r yr` survey program (F/V `r boat`).  Sets
     trap.set         <-  srvy.set[ ,c(-2,-4:-24), ]
     names(trap.set)  <-  c("surveyset","Type")
      
-    trap.set$count   <- 81
+    trap.set$count   <- 100
     trap.set         <- trap.set %>%  # set background colour
                          mutate(get.color = ifelse(Type %in% c("Inlet") , "olivedrab1",  "white"))
-    trap.set$get.color[trap.set$Type=='Movement']   <- "lightskyblue"   # movement
-    trap.set$get.color[trap.set$surveyset %in% 
-                         c(6,12,19,23,31,37,38,43,44,70,75,76,82,83,84,90,91)] <- "plum2"  
+    trap.set$get.color[trap.set$Type=='Movement']   <- "lightskyblue"   # movement sets are 5,11,18,21,30,64
+    trap.set$get.color[trap.set$surveyset %in%    # unique sets with camera entered by hand below from Appendix B
+                         c(6,12,19,21,23,31,37,38,43,44,70,75,76,82,83,84,90,91)] <- "plum2"  
     # tail(trap.set)
     
-     w   <-  trap.set %>%
+     w   <-  trap.set %>%    # create color coded set numbers in box format, export to png
      group_by(surveyset) %>%
      do({
-       p <- ggplot(., aes(y = count, x = 1, label=.$surveyset)) + 
+         p <- ggplot(., aes(y = count, x = 1, label=.$surveyset)) + 
               geom_bar(stat="identity", color="white",fill=.$get.color) +
                  ylim(0, 100) +
                  theme_void() +
                  geom_text(size=8,vjust = 1.3)
-      ggsave(p, filename = paste0(path,"sets_", unique(.$surveyset), ".png"), width = 1.2, height = 0.5)  
+      #ggsave(p, filename = paste0(path,"sets_", unique(.$surveyset), ".png"), width = 1.2, height = 0.5)  
       invisible(.) })
  
       kableExtra::kable(srvy.set,
-                    booktabs  = TRUE, 
-                    align = c("l","l","l","l","l","l","l","l","l","l","l","l","l","l","l","l","l","l","l"),
-                    longtable = T,
-                    linesep   = "",
-                    escape = F,
-                    format    = "latex") %>%
+                  booktabs  = TRUE, 
+                  align=rep('l', 19),
+                  longtable = T,
+                  linesep   = "",
+                  escape = F,
+                  format    = "latex") %>%
       
-   kableExtra::kable_styling(font_size = 8, latex_options = "repeat_header",
-               repeat_header_text = "continued.", 
-               repeat_header_method = "replace") %>%
-   kableExtra::landscape() %>%
+      kableExtra::kable_styling(font_size = 8, 
+                  latex_options = "repeat_header",
+                  repeat_header_text = "continued.", 
+                  repeat_header_method = "replace") %>%
+      kableExtra::landscape() %>%
     
-   row_spec(0, bold = T)  %>%     
-   column_spec(1,width    = "0.5cm") %>%  # set
-   column_spec(2,width    = "1.3cm") %>%  # stratum
-   column_spec(3,width    = "0.9cm") %>%  # type 
-   column_spec(4,width    = "0.7cm") %>%  # depth stratum
-   column_spec(5,width    = "0.9cm") %>%  # date
-   column_spec(6,width    = "0.6cm") %>%  # time      
-   column_spec(7,width    = "0.9cm") %>%  # dur
-   column_spec(8,width    = "0.5cm") %>%  # area   
-   column_spec(9,width    = "1.2cm") %>%  # start lat
-   column_spec(10,width   = "1.6cm") %>%  # start long
-   column_spec(11,width   = "1.2cm") %>%  # end lat
-   column_spec(12,width   = "1.6cm") %>%  # end long
-   column_spec(13,width   = "0.6cm") %>%  # start dep
-   column_spec(14,width   = "0.6cm") %>%  # end dep    
-   column_spec(15,width   = "0.5cm") %>%  # mean dep
-   column_spec(16,width   = "0.6cm") %>%  # tf
-   column_spec(17,width   = "0.4cm") %>%  # sbe
-   column_spec(18,width   = "0.4cm") %>%  # hobo
-   column_spec(19,width   = "0.4cm") %>%  # cam   
-   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .)
+      row_spec(0, bold = T)  %>%     
+      column_spec(1,width    = "0.5cm") %>%  # set
+      column_spec(2,width    = "1.3cm") %>%  # stratum
+      column_spec(3,width    = "0.9cm") %>%  # type 
+      column_spec(4,width    = "0.7cm") %>%  # depth stratum
+      column_spec(5,width    = "0.9cm") %>%  # date
+      column_spec(6,width    = "0.6cm") %>%  # time      
+      column_spec(7,width    = "0.9cm") %>%  # duration
+      column_spec(8,width    = "0.5cm") %>%  # area   
+      column_spec(9,width    = "1.2cm") %>%  # start lat
+      column_spec(10,width   = "1.6cm") %>%  # start long
+      column_spec(11,width   = "1.2cm") %>%  # end lat
+      column_spec(12,width   = "1.6cm") %>%  # end long
+      column_spec(13,width   = "0.6cm") %>%  # start depth
+      column_spec(14,width   = "0.6cm") %>%  # end depth   
+      column_spec(15,width   = "0.5cm") %>%  # mean depth
+      column_spec(16,width   = "0.6cm") %>%  # tf
+      column_spec(17,width   = "0.4cm") %>%  # sbe
+      column_spec(18,width   = "0.4cm") %>%  # hobo
+      column_spec(19,width   = "0.4cm") %>%  # camera   
+      sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .)
 ``` 
 
 \clearpage
@@ -161,9 +164,8 @@ Summary of the basket use by trap number for StRS and inlet sets during the `r y
    #write.table(trap.dat, file = paste(path,'appendixC.csv',sep=''),row.names=FALSE,na="",col.names=TRUE,sep=",")    
    trap.dat    <- read.csv(paste(path,'appendixC.csv',sep=''),header=T)
    
-   trap.Usage    <- trap.dat[,c(-1)]      # delete trip_id
-   trap.Usage    <- trap.Usage[,c(-28)]   # delete Trap 27, there are many sets with 26 traps in 2022
-
+   trap.Usage    <- trap.dat[,c(-1)]      # delete trip_id column
+   trap.Usage    <- trap.Usage[,c(-28)]   # delete Trap 27 if appendixC.csv has nothing in trap 27 column
    trap.Usage    <- dplyr::mutate(trap.Usage, A = rowSums(trap.Usage == "A", na.rm = TRUE))  # add up A's
    trap.Usage    <- dplyr::mutate(trap.Usage, AF = rowSums(trap.Usage == "A,F", na.rm = TRUE)) 
    trap.Usage$A2 <- trap.Usage$A + trap.Usage$AF
@@ -199,7 +201,7 @@ Summary of the basket use by trap number for StRS and inlet sets during the `r y
                      longtable = T,
                      escape = F,        # lets the image show up 
                      linesep   = "",
-                     row.names = FALSE,  # gets rid of matrix counter
+                     row.names = FALSE, # gets rid of matrix counter
                      format = "latex") %>%
       
       add_header_above(c(" "= 1,
@@ -240,7 +242,7 @@ Summary of the basket use by trap number for StRS and inlet sets during the `r y
        column_spec(24,width     = "0.4cm") %>% 
        column_spec(25,width     = "0.4cm") %>%
        column_spec(26,width     = "0.4cm") %>%      
-       column_spec(27,width     = "0.4cm")  %>% 
+       column_spec(27,width     = "0.4cm") %>% 
        column_spec(28,width     = "0.2cm") %>%
        column_spec(29,width     = "0.2cm") %>%
        column_spec(30,width     = "0.2cm") %>%      
@@ -298,14 +300,14 @@ Summary of the basket use by trap number for StRS and inlet sets during the `r y
     trap.sable[is.na(trap.sable)] <- 0
    
    # --- unique to 2022 until HAUL_POSITION_CODE is populated, sets 95,96,97 = start
-   
-   new.trap.sable <- trap.sable %>% mutate(PU = ifelse(SurveySet %in% c(95,96,97), "START", "END"))
+  #  --  the rest are picked up at the end
+    new.trap.sable <- trap.sable %>% mutate(PU = ifelse(SurveySet %in% c(95,96,97), "START", "END"))
 
-   trap.sable.start <- new.trap.sable[new.trap.sable$PU =='START',]
-   trap.sable.end   <- new.trap.sable[new.trap.sable$PU =='END',]
-   big.value <- max(new.trap.sable$Value)
+    trap.sable.start <- new.trap.sable[new.trap.sable$PU =='START',]
+    trap.sable.end   <- new.trap.sable[new.trap.sable$PU =='END',]
+    big.value <- max(new.trap.sable$Value)
 
-   w<-trap.sable.start %>%   # create sparkline graphs
+    w<-trap.sable.start %>%   # create sparkline graphs
      group_by(SurveySet) %>%
      do({
        p <- ggplot(., aes(x = Trap, y = Value)) + 
@@ -317,7 +319,7 @@ Summary of the basket use by trap number for StRS and inlet sets during the `r y
             xlim(0,25) +
             theme_void() 
             stat_summary(fun = max, colour = "red", geom = "point", size = 5)
-            ggsave(p, filename = paste0(path, "fig", unique(.$SurveySet), ".png"), width = 8, height = 1.9)  # mini graphs
+            #ggsave(p, filename = paste0(path, "fig", unique(.$SurveySet), ".png"), width = 8, height = 1.9)  # mini graphs
             invisible(.) 
        })
    
@@ -333,7 +335,7 @@ Summary of the basket use by trap number for StRS and inlet sets during the `r y
             xlim(0,25) +
             theme_void() 
             stat_summary(fun = max, colour = "red", geom = "point", size = 5)
-            ggsave(p, filename = paste0(path,"fig", unique(.$SurveySet), ".png"), width = 8, height = 1.9)  # mini graphs
+            #ggsave(p, filename = paste0(path,"fig", unique(.$SurveySet), ".png"), width = 8, height = 1.9)  # mini graphs
             invisible(.) 
        
      })
@@ -344,7 +346,7 @@ Summary of the basket use by trap number for StRS and inlet sets during the `r y
 
 # SUMMARY OF SABLEFISH BIOLOGICAL DATA `r yr`. {#app:fourth-appendix}
 
-Summary of biological data collected for Sablefish by set, catch weight in kilograms and numbers of fish.  Sablefish counts by trap are represented by sparklines, with every string picked up from the end location in 2021. Tagged fish counts are recorded by number of fish recovered and re-released, fish sampled and fish tagged and released. Tagged fish fork lengths are listed by count and mean (millimeters). Specimen counts are listed by sample type; mean fork lengths are tabulated.  Standardized sets at mainland inlet localities are highlighted with green colour and StRS sets have no background colour. Those set numbers highlighted with purple colour had a camera deployed on the string of gear.  The 4 sets highlighted in blue colour represent the 60 trap sets that were deployed to evaluate gear bottom-contact.
+Summary of biological data collected for Sablefish by set, catch weight in kilograms and numbers of fish.  Sablefish counts by trap are represented by sparklines, with every string picked up from the end location in 2021. Tagged fish counts are recorded by number of fish recovered and re-released, fish sampled and fish tagged and released. Tagged fish fork lengths are listed by count and mean (millimeters). Specimen counts are listed by sample type; mean fork lengths are tabulated.  Standardized sets at mainland inlet localities are highlighted with green colour and StRS sets have no background colour. Those set numbers highlighted with purple colour had a camera deployed on the string of gear.  The 6 sets highlighted in blue colour represent the 60 trap sets that were deployed to evaluate gear bottom-contact.
 
 ```{r appendixD, echo=FALSE}
 
@@ -352,6 +354,39 @@ Summary of biological data collected for Sablefish by set, catch weight in kilog
    #  from table GFBIO_RESEARCH_SAMPLE_DETAILS, built by     
    #  procedure Sablefish.dbo.Build_BIO_Sablefish_Tables 
    # \renewcommand{\arraystretch}{1} # use above r code to stretch table
+
+   #  sql server query to double check when released tags have missing lengths
+   #  SELECT  FishTag.dbo.FISH_TAG_EVENTS.EVENT_YEAR, FishTag.dbo.FISH_TAG_EVENTS.EVENT_TRIP,
+   #  FishTag.dbo.FISH_TAG_EVENTS.EVENT_SET, FishTag.dbo.EVENT_TYPE.EVENT_DESCRIPTION, 
+   #  FishTag.dbo.FISH_TAG_EVENTS.EVENT_NUMBER, COUNT(FishTag.dbo.FISH_TAG_EVENTS.TAG_ID) AS Expr1,    
+   #  FishTag.dbo.FISH_TAG_EVENTS.TAG_NUMBER, FishTag.dbo.FISH_TAG_EVENTS.PREVIOUS_TAG_NUMBER, 
+   #  FishTag.dbo.FISH_TAG_EVENTS.RECAPTURE_FISH_ID, FishTag.dbo.FISH_TAG_EVENTS.RECOVERY_NATION_CODE
+   #  FROM FishTag.dbo.FISH_TAG_EVENTS LEFT OUTER JOIN
+   #  FishTag.dbo.EVENT_TYPE ON FishTag.dbo.FISH_TAG_EVENTS.EVENT_TYPE = FishTag.dbo.EVENT_TYPE.EVENT_TYPE
+   #  GROUP BY FishTag.dbo.FISH_TAG_EVENTS.EVENT_YEAR, FishTag.dbo.EVENT_TYPE.EVENT_DESCRIPTION,    
+   #  FishTag.dbo.FISH_TAG_EVENTS.EVENT_TRIP, FishTag.dbo.FISH_TAG_EVENTS.EVENT_SET, 
+   #  FishTag.dbo.FISH_TAG_EVENTS.EVENT_NUMBER, FishTag.dbo.FISH_TAG_EVENTS.TAG_NUMBER,    
+   #  FishTag.dbo.FISH_TAG_EVENTS.PREVIOUS_TAG_NUMBER, FishTag.dbo.FISH_TAG_EVENTS.RECAPTURE_FISH_ID, 
+   #  FishTag.dbo.FISH_TAG_EVENTS.RECOVERY_NATION_CODE
+   #  HAVING (FishTag.dbo.EVENT_TYPE.EVENT_DESCRIPTION = N'release') AND (FishTag.dbo.FISH_TAG_EVENTS.EVENT_YEAR = 2022) AND    
+   #  (FishTag.dbo.FISH_TAG_EVENTS.EVENT_SET = 45)  ORDER BY FishTag.dbo.FISH_TAG_EVENTS.EVENT_SET
+
+   #  and recovered dead:
+   #  SELECT FishTag.dbo.FISH_TAG_EVENTS.EVENT_YEAR, FishTag.dbo.FISH_TAG_EVENTS.EVENT_TRIP, 
+   #  FishTag.dbo.FISH_TAG_EVENTS.EVENT_SET, FishTag.dbo.EVENT_TYPE.EVENT_DESCRIPTION, 
+   #  COUNT(FishTag.dbo.FISH_TAG_EVENTS.TAG_ID) AS Expr1, FishTag.dbo.FISH_TAG_EVENTS.TAG_NUMBER,   
+   #  FishTag.dbo.FISH_TAG_REC_SPECS.RECOVERY_FORM,  FishTag.dbo.FISH_TAG_REC_SPECS.RECOVERY_STATE
+   #  FROM  FishTag.dbo.FISH_TAG_EVENTS INNER JOIN
+   #  dbo.GENERIC_GFBIO_SABLE_TRIPS ON FishTag.dbo.FISH_TAG_EVENTS.EVENT_TRIP = dbo.GENERIC_GFBIO_SABLE_TRIPS.TRIP_ID INNER JOIN
+   #  FishTag.dbo.FISH_TAG_REC_SPECS ON FishTag.dbo.FISH_TAG_EVENTS.TAG_ID = FishTag.dbo.FISH_TAG_REC_SPECS.TAG_ID LEFT OUTER JOIN
+   #  FishTag.dbo.EVENT_TYPE ON FishTag.dbo.FISH_TAG_EVENTS.EVENT_TYPE = FishTag.dbo.EVENT_TYPE.EVENT_TYPE
+   #  WHERE   (FishTag.dbo.FISH_TAG_REC_SPECS.RECOVERY_STATE IN (2, 3, 4))
+   #  GROUP BY FishTag.dbo.FISH_TAG_EVENTS.EVENT_YEAR, FishTag.dbo.EVENT_TYPE.EVENT_DESCRIPTION, 
+   #  FishTag.dbo.FISH_TAG_EVENTS.EVENT_TRIP, FishTag.dbo.FISH_TAG_EVENTS.EVENT_SET, 
+   #   FishTag.dbo.FISH_TAG_EVENTS.TAG_NUMBER, FishTag.dbo.FISH_TAG_REC_SPECS.RECOVERY_FORM,    
+   #  FishTag.dbo.FISH_TAG_REC_SPECS.RECOVERY_STATE
+   #  HAVING  (FishTag.dbo.EVENT_TYPE.EVENT_DESCRIPTION = N'recovery') AND (
+   #  FishTag.dbo.FISH_TAG_EVENTS.EVENT_YEAR = 2022) AND (FishTag.dbo.FISH_TAG_EVENTS.EVENT_SET = 45)
 
    # build tag to finish this table.....
 
@@ -364,7 +399,7 @@ Summary of biological data collected for Sablefish by set, catch weight in kilog
    #tail(surveyspec)
 
    # camera/movement sets
-   surveycam                        <-  surveyspec[c(7,14,27,63),]
+   surveycam                        <-  surveyspec[c(5,11,18,21,30,64),]  #movement for 2022
    surveycam.Total.Count            <-  sum(surveycam$Total.Count)
    surveycam.Recovered.Dead.Number  <-  sum(surveycam$Recovered.Dead.Number)
    surveycam.Fork.Len.Tag.Sample.Count<-  sum(surveycam$Fork.Len.Tag.Sample.Count)
@@ -385,7 +420,7 @@ Summary of biological data collected for Sablefish by set, catch weight in kilog
    addition.cam  <- prettyNum(addition.cam, big.mark = ",", scientific = FALSE)
    
    # other sets
-   surveyspec.other  <-  surveyspec[c(-7,-14,-27,-63),]   # delete camera sets for other and the last line
+   surveyspec.other  <-  surveyspec[c(-5,-11,-18,-21,-30,-64),]   # delete camera sets for other and the last line
    
    surveyspec.other.Total.Count            <-  sum(surveyspec.other$Total.Count)
    surveyspec.other.Recovered.Number       <-  sum(surveyspec.other$Recovered.Number)
@@ -442,7 +477,8 @@ Summary of biological data collected for Sablefish by set, catch weight in kilog
                   mutate(Sparkline2 = 
                          paste0("\\raisebox{-.28\\height} {\\includegraphics[width=0.8cm]{",path,"sets_",SET,".png}}") ) 
    
-   surveyspec  <- surveyspec[, c(19, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)]  #reorder table
+   surveyspec  <- surveyspec[, c(19, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
+                                 11, 12, 13, 14, 15, 16, 17, 18)]  #reorder table
    
    addition.cam[addition.cam=="      NA"] <- "" 
    addition.line.other[addition.line.other=="    NA"] <- ""
@@ -523,25 +559,26 @@ Biological data collected for Rougheye/Blackspotted Rockfish complex.  Each set 
                       "bsre.Rougheye, bsre.Blackspotted, bsre.Hybrid ",
                       "from  ",
                       "(select year, TRIP_ID, FE_MAJOR_LEVEL_ID, SPECIES_CODE, ",
-                           "SUM(re) AS Rougheye, SUM(bs) AS Blackspotted, SUM(hyb) AS Hybrid ",
-                           "from  (select year, TRIP_ID, FE_MAJOR_LEVEL_ID, SPECIES_CODE, ",
-                           "CASE WHEN EXISTENCE_ATTRIBUTE_CODE = 16 THEN 1 ELSE 0 END AS re, ",
-                           "CASE WHEN EXISTENCE_ATTRIBUTE_CODE = 17 THEN 1 ELSE 0 END AS bs, ",
-                           "CASE WHEN EXISTENCE_ATTRIBUTE_CODE = 31 THEN 1 ELSE 0 END AS hyb, ",
-                           "SPECIMEN_ID ",
-                           "from dbo.gfbio_species_guess) AS bs ",
-                           "group by year, TRIP_ID, FE_MAJOR_LEVEL_ID, SPECIES_CODE) AS bsre ", 
-                           "RIGHT OUTER JOIN ",
-                           "dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH ON bsre.TRIP_ID = ",              
-                           "dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH.TRIP_ID and ",
-                           "bsre.FE_MAJOR_LEVEL_ID = dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH.[SET] ",
-                           "and bsre.SPECIES_CODE = ",                       
-                           "dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH.species ",            
-                           "where (dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH.Year = ", yr, 
-                           ") and (dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH.species = N'394') ",
-                           "order by species,[SET]", sep="")
+                      "SUM(re) AS Rougheye, SUM(bs) AS Blackspotted, SUM(hyb) AS Hybrid ",
+                      "from  (select year, TRIP_ID, FE_MAJOR_LEVEL_ID, SPECIES_CODE, ",
+                      "CASE WHEN EXISTENCE_ATTRIBUTE_CODE = 16 THEN 1 ELSE 0 END AS re, ",
+                      "CASE WHEN EXISTENCE_ATTRIBUTE_CODE = 17 THEN 1 ELSE 0 END AS bs, ",
+                      "CASE WHEN EXISTENCE_ATTRIBUTE_CODE = 31 THEN 1 ELSE 0 END AS hyb, ",
+                      "SPECIMEN_ID ",
+                      "from dbo.gfbio_species_guess) AS bs ",
+                      "group by year, TRIP_ID, FE_MAJOR_LEVEL_ID, SPECIES_CODE) AS bsre ", 
+                      "RIGHT OUTER JOIN ",
+                      "dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH ON bsre.TRIP_ID = ",              
+                      "dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH.TRIP_ID and ",
+                      "bsre.FE_MAJOR_LEVEL_ID = dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH.[SET] ",
+                      "and bsre.SPECIES_CODE = ",                       
+                      "dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH.species ",            
+                      "where (dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH.Year = ", yr, 
+                      ") and (dbo.GFBIO_RESEARCH_SAMPLE_DETAILS_OTHER_FISH.species = N'394') ",
+                      "order by species,[SET]", sep="")
    #otherspecre      <-  GetSQLData(othersamplesre,"Sablefish")   # read from SQL Server
-   #write.table(otherspecre, file = paste(path,'appendixE.csv',sep=''),row.names=FALSE, na="",col.names=TRUE,  sep=",")   
+   #write.table(otherspecre, file = paste(path,'appendixE.csv',sep=''),
+      #row.names=FALSE, na="",col.names=TRUE,  sep=",")   
    otherspecre       <-  read.csv(paste(path,'appendixE.csv',sep=''),header=T) # read from csv
    otherspecre[2,14] <- 0
    otherspecre[2,15] <- 0
@@ -644,7 +681,7 @@ Biological data collected for other rockfish species.  Each set is listed with c
                      booktabs = TRUE, 
                      longtable = T,
                      linesep   = "",
-                     align=c('l','l','l','l','l','l','l','l','l','l','l','l','l'),
+                     align=rep('l', 13),
                      format = "latex") %>%
       
       add_header_above(c(" "= 2,
@@ -665,7 +702,7 @@ Biological data collected for other rockfish species.  Each set is listed with c
       column_spec(7,width     = "0.7cm") %>% # oto
       column_spec(8,width     = "0.7cm") %>% # dna 
       column_spec(9,width     = "0.2cm") %>% # tot cnt        
-      column_spec(10,width     = "1.0cm") %>% # prop m
+      column_spec(10,width    = "1.0cm") %>% # prop m
       column_spec(11,width    = "0.5cm") %>% # male
       column_spec(12,width    = "0.7cm") %>% # female
       column_spec(13,width    = "0.6cm") %>% #  no sex  
